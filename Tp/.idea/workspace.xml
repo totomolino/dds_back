@@ -11,6 +11,111 @@
   <component name="ChangeListManager">
     <list default="true" id="b4fae556-e56c-4d2e-9322-f2a75ae1d720" name="Default Changelist" comment="Probamos el menu xd">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/Administrador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/Adoptante.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/Contacto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/Duenio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/Especie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/Foto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/Mascota.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/Organizacion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/Persona.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/Rescate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/Rescatista.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/Tamanio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/TipoDeUsuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/Usuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/Voluntario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/hogarDeTransito.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/mainTrucho.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/publicaciones/Publicacion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/publicaciones/PublicacionAdoptar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/publicaciones/PublicacionDarEnAdopcion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/publicaciones/PublicacionPerdida.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/services/apiHogares/ApiHogaresService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/services/apiHogares/apiHogares.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/services/apiHogares/entities/Error.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/services/apiHogares/entities/Hogar$Admisiones.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/services/apiHogares/entities/Hogar$Ubicacion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/services/apiHogares/entities/Hogar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/services/apiHogares/entities/Mensaje.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/services/apiHogares/entities/hogaresDeTransito.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/services/apiHogares/mainTrucho.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Notificar/EMAIL.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Notificar/SMS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Notificar/WHATSAPP.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Notificar/notificarStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Notificar/twilio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Sistema/Sistema.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/AdministradorBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/AdoptanteBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/CarMasXMas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/CaracOrgXmascota.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/CaracteristicaMascota.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/CaracteristicaOrg.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/ComodidadesBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/ComodidadesXadoptante.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/ContactoBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/DuenioBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/FormaNotifCont.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/FormaNotifPers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/FotoAnimales.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/FotoRescate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/MascotaBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/OrganizacionBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/PersonaBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/PreferenciaBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/PreferenciaXAdoptante.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/PregOrgXmascota.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/PreguntaOrg.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/PreguntasObligatorias.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/PublicacionAdoptarBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/PublicacionBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/PublicacionDarEnAdopcionBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/PublicacionPerdidaBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/RescateBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/RescatistaBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/UsuarioBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/VoluntarioBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/pregPublicacionDarEnAdopcion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/prueba.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main$RecomendarAdopcion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mappers/caracMascota.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mappers/fotosMascota.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mappers/hashmapMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mappers/listaCarac.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mappers/listaMasc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mappers/usuarioIniciarSesion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/respuestas/claseJSon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/respuestas/devolverMascota.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/respuestas/devolverObjeto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/respuestas/id.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/respuestas/loginResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/respuestas/mascotaSimple.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/respuestas/mensaje.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/respuestas/objeto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/respuestas/userName.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/respuestas/usuarioCreado.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/seguridad/register.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/seguridad/reglasNist.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/BDUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/JsonTransformer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/SesionManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/views/menuPrincipal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/views/menuPruebas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/patitas-1.0-jar-with-dependencies.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/patitas-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/pruebas.class" beforeDir="false" />
     </list>
     <list id="80c95c24-0952-4871-942b-1332797591c3" name="Changes by eze" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -292,6 +397,7 @@
       <workItem from="1637376719385" duration="1104000" />
       <workItem from="1637411613447" duration="4736000" />
       <workItem from="1637429691433" duration="2807000" />
+      <workItem from="1637437552585" duration="1840000" />
     </task>
     <task id="LOCAL-00001" summary="Cambie la dependencia junit a 4.13.1">
       <created>1619485615853</created>
