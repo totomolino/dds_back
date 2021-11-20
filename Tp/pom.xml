@@ -57,7 +57,7 @@
                     <processTypes>
                         <!-- Tell Heroku how to launch your application -->
                         <!-- You might have to remove the ./ in front   -->
-                        <web>java -jar ../heroku/TrabajoIntegrador.jar</web>
+                        <web>java -jar ./target/TrabajoIntegrador.jar</web>
                     </processTypes>
                 </configuration>
             </plugin>

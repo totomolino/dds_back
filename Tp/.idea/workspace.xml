@@ -79,7 +79,7 @@
     <property name="codeWithMe.voiceChat.enabledByDefault" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/target" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -287,7 +287,7 @@
       <workItem from="1637351695898" duration="1469000" />
       <workItem from="1637373557181" duration="1288000" />
       <workItem from="1637375037651" duration="1455000" />
-      <workItem from="1637376719385" duration="292000" />
+      <workItem from="1637376719385" duration="514000" />
     </task>
     <task id="LOCAL-00001" summary="Cambie la dependencia junit a 4.13.1">
       <created>1619485615853</created>
