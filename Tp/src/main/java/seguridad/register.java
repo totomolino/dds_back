@@ -11,7 +11,7 @@ public class register {
     public static boolean esFacil(String unaContrasenia) throws FileNotFoundException {
 
         //LLENAMOS LA LISTA
-        File file = new File("../contras.txt");
+        File file = new File("./contras.txt");
         Scanner scan = new Scanner(file);
 
         List<String> contraseniasFaciles = new ArrayList<>();

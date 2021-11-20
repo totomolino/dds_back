@@ -9,7 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4fae556-e56c-4d2e-9322-f2a75ae1d720" name="Default Changelist" comment="Probamos el menu xd" />
+    <list default="true" id="b4fae556-e56c-4d2e-9322-f2a75ae1d720" name="Default Changelist" comment="Probamos el menu xd">
+      <change afterPath="$PROJECT_DIR$/contras.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d872c045-6c79-4050-bce3-658420c700b2/entities/entities.dat.values" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d872c045-6c79-4050-bce3-658420c700b2/entities/entities.dat.values" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d872c045-6c79-4050-bce3-658420c700b2/entities/entities.dat.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d872c045-6c79-4050-bce3-658420c700b2/entities/entities.dat.values.s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/seguridad/register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seguridad/register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../contras.txt" beforeDir="false" />
+    </list>
     <list id="80c95c24-0952-4871-942b-1332797591c3" name="Changes by eze" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -289,6 +296,7 @@
       <workItem from="1637375037651" duration="1455000" />
       <workItem from="1637376719385" duration="1104000" />
       <workItem from="1637411613447" duration="4736000" />
+      <workItem from="1637429691433" duration="359000" />
     </task>
     <task id="LOCAL-00001" summary="Cambie la dependencia junit a 4.13.1">
       <created>1619485615853</created>
