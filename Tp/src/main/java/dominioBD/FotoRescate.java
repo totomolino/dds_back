@@ -14,7 +14,7 @@ public class FotoRescate {
     @JoinColumn(name = "resc_id")
     private RescateBD fore_rescate;
 
-    @Column(columnDefinition="longtext")
+    @Column(columnDefinition="text")
     private String fore_direccion;
 
     public Long getFore_id() {

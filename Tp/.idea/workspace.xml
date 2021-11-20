@@ -10,7 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4fae556-e56c-4d2e-9322-f2a75ae1d720" name="Default Changelist" comment="Probamos el menu xd">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6d2cef77-b000-44f6-9940-3bd14372e9fc/entities/entities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6d2cef77-b000-44f6-9940-3bd14372e9fc/entities/entities.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6d2cef77-b000-44f6-9940-3bd14372e9fc/entities/entities.dat.values" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6d2cef77-b000-44f6-9940-3bd14372e9fc/entities/entities.dat.values" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6d2cef77-b000-44f6-9940-3bd14372e9fc/entities/entities.dat.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6d2cef77-b000-44f6-9940-3bd14372e9fc/entities/entities.dat.values.s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6d2cef77-b000-44f6-9940-3bd14372e9fc/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6d2cef77-b000-44f6-9940-3bd14372e9fc/entities/entities.dat_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d872c045-6c79-4050-bce3-658420c700b2/entities/entities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d872c045-6c79-4050-bce3-658420c700b2/entities/entities.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d872c045-6c79-4050-bce3-658420c700b2/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d872c045-6c79-4050-bce3-658420c700b2/entities/entities.dat_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominioBD/FotoAnimales.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominioBD/FotoAnimales.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominioBD/FotoRescate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dominioBD/FotoRescate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <list id="80c95c24-0952-4871-942b-1332797591c3" name="Changes by eze" comment="" />
@@ -290,7 +298,8 @@
       <workItem from="1637351695898" duration="1469000" />
       <workItem from="1637373557181" duration="1288000" />
       <workItem from="1637375037651" duration="1455000" />
-      <workItem from="1637376719385" duration="1037000" />
+      <workItem from="1637376719385" duration="1104000" />
+      <workItem from="1637411613447" duration="1653000" />
     </task>
     <task id="LOCAL-00001" summary="Cambie la dependencia junit a 4.13.1">
       <created>1619485615853</created>
