@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>Pruebas</artifactId>
+    <artifactId>Patitas</artifactId>
     <version>1.0-SNAPSHOT</version>
 
 
@@ -41,7 +41,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>Main</mainClass>
+                            <mainClass>main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -57,7 +57,7 @@
                     <processTypes>
                         <!-- Tell Heroku how to launch your application -->
                         <!-- You might have to remove the ./ in front   -->
-                        <web>java -jar ./target/TrabajoIntegrador.jar</web>
+                        <web>java -jar ./target/Patitas-1.0-jar-with-dependencies.jar</web>
                     </processTypes>
                 </configuration>
             </plugin>
