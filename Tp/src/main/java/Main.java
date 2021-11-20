@@ -17,7 +17,7 @@ import static org.quartz.TriggerBuilder.newTrigger;
 import static spark.Spark.before;
 import static spark.Spark.options;
 
-public class main {
+public class Main {
 
     private static menuPruebas menu = new menuPruebas();
 
@@ -40,7 +40,7 @@ public class main {
 
         Spark.port(getHerokuAssignedPort());
         Spark.path("/patitas", Sistema::definePaths);
-        Spark.get("/prueba", main::devolverAlgo);
+        Spark.get("/prueba", Main::devolverAlgo);
 
         options("/*",
                 (request, response) -> {

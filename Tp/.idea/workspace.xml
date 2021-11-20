@@ -12,6 +12,12 @@
     <list default="true" id="b4fae556-e56c-4d2e-9322-f2a75ae1d720" name="Default Changelist" comment="Probamos el menu xd">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main$RecomendarAdopcion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main$RecomendarAdopcion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main.class" afterDir="false" />
     </list>
     <list id="80c95c24-0952-4871-942b-1332797591c3" name="Changes by eze" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -124,7 +130,7 @@
       <recent name="Business.publicaciones" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.main">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="BD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dominioBD.BD" />
       <module name="TrabajoIntegrador" />
@@ -151,8 +157,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="TrabajoIntegrador" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -186,7 +192,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.main" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.prueba" />
         <item itemvalue="Application.mainTrucho" />
         <item itemvalue="Application.HelloWorld" />
@@ -292,7 +298,7 @@
       <workItem from="1637375037651" duration="1455000" />
       <workItem from="1637376719385" duration="1104000" />
       <workItem from="1637411613447" duration="4736000" />
-      <workItem from="1637429691433" duration="1313000" />
+      <workItem from="1637429691433" duration="2035000" />
     </task>
     <task id="LOCAL-00001" summary="Cambie la dependencia junit a 4.13.1">
       <created>1619485615853</created>
