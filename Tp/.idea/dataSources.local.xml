@@ -15,5 +15,20 @@
         </introspection-scope>
       </schema-mapping>
     </data-source>
+    <data-source name="postgres" uuid="d872c045-6c79-4050-bce3-658420c700b2">
+      <database-info product="PostgreSQL" version="13.5 (Ubuntu 13.5-1.pgdg20.04+1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.22" dbms="POSTGRES" exact-version="13.5" exact-driver-version="42.2">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>qubxodnjhgrkfb</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="database" qname="@">
+            <node kind="schema" qname="@" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
   </component>
 </project>

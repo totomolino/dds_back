@@ -8,9 +8,9 @@
         <properties>
             <property name="hibernate.archive.autodetection" value="class"/>
             <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
-            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/mascotas"/>
-            <property name="hibernate.connection.username" value="root"/>
-            <!--     <property name="hibernate.connection.password" value="root"/> -->
+            <property name="hibernate.connection.url" value="jdbc:postgresql://ec2-54-146-82-179.compute-1.amazonaws.com:5432/d6thi8gjshhtp"/>
+            <property name="hibernate.connection.username" value="qubxodnjhgrkfb"/>
+            <property name="hibernate.connection.password" value="c2d60356c8bd9f3f40c0360b5834b9031ff4594c85686e7870f0fd278b4278ea"/>
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL57Dialect"/>
             <!--<property name="hibernate.hbm2ddl.auto" value="create-drop"/>-->
             <property name="hibernate.hbm2ddl.auto" value="update"/>
