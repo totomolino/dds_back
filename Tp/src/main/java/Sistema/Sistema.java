@@ -284,11 +284,12 @@ public class Sistema {
         Spark.post("/publicacion/adopcion/preguntas",  Sistema::agregarPreguntasPubli);
         Spark.post("/publicacion/adoptar",  Sistema::crearPublicacionAdoptar);
         Spark.post("/organizacion", Sistema::crearOrganizacion);
-        Spark.get("/publicacion/adopcion/:id", Sistema::devolverPublicacionesDarAdopcion);
+        Spark.get("/publicacion/adopcion", Sistema::devolverPublicacionesDarAdopcion);
         Spark.get("/misDatos", Sistema::DatosUsuario);
         Spark.get("/duenio/mascotas", Sistema::devolverMascotas);
         Spark.get("/orga/caracteristicas/:id", Sistema::dameCaracteristicas);
         Spark.get("/hogares", Sistema::dameHogares);
+
 
         //Spark.post("/publicacionPerdida", Sistema::crearPubPerdida);
     }
@@ -381,24 +382,27 @@ public class Sistema {
 
     private static String devolverPublicacionesDarAdopcion(Request req, Response res) {
 
-        String personaID =  req.params(":id");
+       // String personaID =  req.params(":id");
 
         res.type("application/json");
 
+        res.status(200);
+
         //MascotaBD mascota = BDUtils.buscarMascota(Integer.parseInt(personaID));
 
-        Adoptante adoptante = BDUtils.buscarAdoptante(Long.parseLong(personaID));
+        //Adoptante adoptante = BDUtils.buscarAdoptante(Long.parseLong(personaID));
 
-        List<PublicacionDarEnAdopcion> publicaciones = publicacionesAptasParaAdoptar(adoptante);
+        //List<PublicacionDarEnAdopcion> publicaciones = publicacionesAptasParaAdoptar(adoptante);
+
+        List<PublicacionDarEnAdopcion> publicaciones = BDUtils.damePublicacionesAdopcion();
 
         if(publicaciones.isEmpty() || publicaciones == null){
             res.status(400);
             return new mensaje("No hay publicaciones").transformar();
         }
 
-        res.status(200);
-        return (new devolverObjeto(publicaciones,("Aca tenes las publicaciones para el adoptante "+personaID))).transformar(); //es posible que rompa por el hashmap
-
+//        return (new devolverObjeto(publicaciones,("Aca tenes las publicaciones para el adoptante "+personaID))).transformar(); //es posible que rompa por el hashmap
+        return new Gson().toJson(new listaPublicacion(publicaciones));
     }
 
     public static String crearUsuario(Request req, Response res) throws FileNotFoundException {

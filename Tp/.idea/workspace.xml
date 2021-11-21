@@ -10,21 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4fae556-e56c-4d2e-9322-f2a75ae1d720" name="Default Changelist" comment="Probamos el menu xd">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jknack_handlebars_4_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/clieLiviano/IniciarSesion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mappers/listaHogares.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/my-styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mappers/listaPublicacion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabajoIntegrador.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoIntegrador.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Business/services/apiHogares/entities/Hogar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Business/services/apiHogares/entities/Hogar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Sistema/Sistema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sistema/Sistema.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/respuestas/mascotaSimple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/respuestas/mascotaSimple.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utils/BDUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/BDUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Business/services/apiHogares/entities/Hogar$Ubicacion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Business/services/apiHogares/entities/Hogar$Ubicacion.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Sistema/Sistema.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Sistema/Sistema.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/respuestas/mascotaSimple.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/respuestas/mascotaSimple.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/BDUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/BDUtils.class" afterDir="false" />
     </list>
     <list id="827e72bb-6e87-4d84-9eaa-ba70decc83bb" name="Changes by Frandom" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -109,6 +100,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="mappers" />
       <recent name="Business" />
       <recent name="domain.seguridad" />
     </key>
