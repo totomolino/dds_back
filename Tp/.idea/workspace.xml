@@ -9,17 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4fae556-e56c-4d2e-9322-f2a75ae1d720" name="Default Changelist" comment="Probamos el menu xd">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6d2cef77-b000-44f6-9940-3bd14372e9fc/entities/entities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6d2cef77-b000-44f6-9940-3bd14372e9fc/entities/entities.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6d2cef77-b000-44f6-9940-3bd14372e9fc/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6d2cef77-b000-44f6-9940-3bd14372e9fc/entities/entities.dat_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d872c045-6c79-4050-bce3-658420c700b2/entities/entities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d872c045-6c79-4050-bce3-658420c700b2/entities/entities.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d872c045-6c79-4050-bce3-658420c700b2/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d872c045-6c79-4050-bce3-658420c700b2/entities/entities.dat_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/patitas-1.0-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/patitas-1.0-jar-with-dependencies.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/patitas-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/patitas-1.0.jar" afterDir="false" />
-    </list>
+    <list default="true" id="b4fae556-e56c-4d2e-9322-f2a75ae1d720" name="Default Changelist" comment="Probamos el menu xd" />
     <list id="80c95c24-0952-4871-942b-1332797591c3" name="Changes by eze" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -301,7 +291,7 @@
       <workItem from="1637411613447" duration="4736000" />
       <workItem from="1637429691433" duration="2807000" />
       <workItem from="1637437552585" duration="2519000" />
-      <workItem from="1637504650993" duration="1604000" />
+      <workItem from="1637504650993" duration="2325000" />
     </task>
     <task id="LOCAL-00001" summary="Cambie la dependencia junit a 4.13.1">
       <created>1619485615853</created>
