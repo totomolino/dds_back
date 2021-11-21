@@ -135,7 +135,7 @@
 
         <resources>
             <resource>
-                <directory>E:\Facultad_Aparte\3ro\DDS\DDS_Grupo_1\Tp\src\main\resources\META-INF</directory>
+                <directory>src\main\resources</directory>
             </resource>
         </resources>
     </build>

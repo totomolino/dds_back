@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="aplicacion" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+<!--        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>-->
+
+<!--        <class>dominioBD.UsuarioBD</class>-->
+        <properties>
+            <property name="hibernate.archive.autodetection" value="class"/>
+            <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
+            <property name="hibernate.connection.url" value="jdbc:postgresql://ec2-54-146-82-179.compute-1.amazonaws.com:5432/d6thi8gjshhtp?sslmode=require"/>
+            <property name="hibernate.connection.verifyServerCertificate" value="false"/>
+            <property name="hibernate.connection.requireSSL"  value="true"/>
+            <property name="hibernate.connection.autoReconnect" value="true"/>
+            <property name="hibernate.connection.username" value="qubxodnjhgrkfb"/>
+            <property name="hibernate.connection.password" value="c2d60356c8bd9f3f40c0360b5834b9031ff4594c85686e7870f0fd278b4278ea"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL95Dialect"/>
+            <property name="hibernate.temp.use_jdbc_metadata_defaults" value="false" />
+            <!--<property name="hibernate.hbm2ddl.auto" value="create-drop"/>-->
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.connection.pool_size" value="10000000"/>
+            <property name="hibernate.connection.autocommit" value="true"/>
+            
+        </properties>
+    </persistence-unit>
+</persistence>
