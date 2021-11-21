@@ -3,6 +3,8 @@ package Sistema;
 import Business.*;
 import Business.publicaciones.Publicacion;
 import Business.publicaciones.PublicacionDarEnAdopcion;
+import Business.services.apiHogares.apiHogares;
+import Business.services.apiHogares.entities.Hogar;
 import Notificar.notificarStrategy;
 import com.google.gson.Gson;
 
@@ -19,6 +21,7 @@ import utils.BDUtils;
 import utils.SesionManager;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -285,9 +288,27 @@ public class Sistema {
         Spark.get("/misDatos", Sistema::DatosUsuario);
         Spark.get("/duenio/mascotas", Sistema::devolverMascotas);
         Spark.get("/orga/caracteristicas/:id", Sistema::dameCaracteristicas);
+        Spark.get("/hogares", Sistema::dameHogares);
 
         //Spark.post("/publicacionPerdida", Sistema::crearPubPerdida);
     }
+
+    private static String dameHogares(Request req, Response res) throws IOException {
+        apiHogares api = apiHogares.getInstancia();
+        List<Hogar> hogares = api.listadoDeHogares();
+
+        res.type("application/json");
+
+        if(hogares.isEmpty()){
+            res.status(400);
+            return new mensaje("No hay ningun hogar de transito").transformar();
+        }
+
+        res.status(200);
+
+        return new Gson().toJson(new listaHogares(hogares));
+    }
+
 
     private static String dameCaracteristicas(Request req, Response res) {
         String orgaId =  req.params(":id");

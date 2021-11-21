@@ -20,8 +20,8 @@ public class Hogar {
     public class Ubicacion {
 
         String direccion;
-        float lat;
-        float longitud;
+        double lat;
+        double longi;
     }
 
     public class Admisiones {

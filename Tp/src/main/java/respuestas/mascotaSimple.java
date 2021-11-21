@@ -8,17 +8,26 @@ import dominioBD.MascotaBD;
 import java.util.List;
 
 public class mascotaSimple extends claseJSon{
-
+    long id;
     String nombre;
     String sexo;
     int edad;
     List<Foto> fotoAnimales;
 
     public mascotaSimple(Mascota mascota) {
+        this.id = mascota.getId();
         this.nombre = mascota.getNombre();
         this.sexo = mascota.getSexo();
         this.edad = mascota.getEdad();
         this.fotoAnimales = mascota.getFotos();
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getNombre() {

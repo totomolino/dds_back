@@ -10,13 +10,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4fae556-e56c-4d2e-9322-f2a75ae1d720" name="Default Changelist" comment="Probamos el menu xd">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jknack_handlebars_4_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/clieLiviano/IniciarSesion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mappers/listaHogares.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/my-styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TrabajoIntegrador.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoIntegrador.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/patitas-1.0-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/patitas-1.0-jar-with-dependencies.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/patitas-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/patitas-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Business/services/apiHogares/entities/Hogar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Business/services/apiHogares/entities/Hogar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Sistema/Sistema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sistema/Sistema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/respuestas/mascotaSimple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/respuestas/mascotaSimple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/BDUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/BDUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/services/apiHogares/entities/Hogar$Ubicacion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Business/services/apiHogares/entities/Hogar$Ubicacion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Sistema/Sistema.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Sistema/Sistema.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/respuestas/mascotaSimple.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/respuestas/mascotaSimple.class" afterDir="false" />
     </list>
-    <list id="80c95c24-0952-4871-942b-1332797591c3" name="Changes by eze" comment="" />
+    <list id="827e72bb-6e87-4d84-9eaa-ba70decc83bb" name="Changes by Frandom" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,9 +74,6 @@
       </map>
     </option>
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
-  </component>
   <component name="ProjectId" id="1riutvLefbhew94E368Hr8dldjN" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -80,6 +87,7 @@
     <property name="DatabaseDriversLRU" value="mariadb&#10;postgresql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="codeWithMe.voiceChat.enabledByDefault" value="false" />
@@ -128,19 +136,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
-    <configuration name="BD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dominioBD.BD" />
-      <module name="TrabajoIntegrador" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dominioBD.Curso" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="HelloWorld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Business.HelloWorld" />
       <module name="TrabajoIntegrador" />
@@ -157,6 +152,19 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="TrabajoIntegrador" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mainTrucho (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Business.services.apiHogares.mainTrucho" />
+      <module name="TrabajoIntegrador" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Business.services.apiHogares.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -190,8 +198,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.prueba" />
         <item itemvalue="Application.mainTrucho" />
+        <item itemvalue="Application.mainTrucho (1)" />
+        <item itemvalue="Application.prueba" />
         <item itemvalue="Application.HelloWorld" />
       </list>
     </recent_temporary>

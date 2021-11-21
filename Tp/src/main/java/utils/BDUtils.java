@@ -51,6 +51,8 @@ public class BDUtils {
         em.persist(unObjeto);
 
         BDUtils.commit(em);
+
+        em.close();
     }
 
     public static boolean puedoEsteNombre(String nombre){
@@ -70,7 +72,7 @@ public class BDUtils {
 
         Object contra1 = (String) query1.getResultList().get(0);
 
-
+        em.close();
         return contra1.equals(contrasenia) ;
     }
 
@@ -95,6 +97,8 @@ public class BDUtils {
 
         List<PublicacionDarEnAdopcionBD> publicaciones = em.createQuery("from PublicacionDarEnAdopcionBD ").getResultList();
 
+        em.close();
+
         return publicaciones.stream().map(publi -> publi.transformar()).collect(Collectors.toList());
     }
 
@@ -103,6 +107,8 @@ public class BDUtils {
         EntityManager em = BDUtils.getEntityManager();
 
         List<FormaNotifPers> formaNotifPers = em.createQuery("from FormaNotifPers where fonop_persona.pers_id = '"+id+"'").getResultList();
+
+        em.close();
 
         return formaNotifPers.stream().map(forma -> forma.transformar()).collect(Collectors.toList());
 
@@ -113,6 +119,8 @@ public class BDUtils {
         EntityManager em = BDUtils.getEntityManager();
 
         List<ContactoBD> contactoBDS = em.createQuery("from ContactoBD where cont_persona.pers_id = '"+id+"'").getResultList();
+
+        em.close();
 
         return contactoBDS.stream().map(contactoBD -> contactoBD.transformar()).collect(Collectors.toList());
 
@@ -125,6 +133,8 @@ public class BDUtils {
 
         List<FormaNotifCont> formaNotifCont = em.createQuery("from FormaNotifCont where fonoc_contacto.cont_id = '"+id+"'").getResultList();
 
+        em.close();
+
         return formaNotifCont.stream().map(forma -> forma.transformar()).collect(Collectors.toList());
 
 
@@ -135,6 +145,8 @@ public class BDUtils {
         EntityManager em = BDUtils.getEntityManager();
 
         List<FotoAnimales> fotos = em.createQuery("from FotoAnimales where fani_masc.masc_id = '"+id+"'").getResultList();
+
+        em.close();
 
         return fotos.stream().map(foto -> foto.transformar()).collect(Collectors.toList());
 
@@ -150,6 +162,8 @@ public class BDUtils {
 
         mascota.getCarMasXMas().stream().map(carMasXMas -> res.put(carMasXMas.getCarMasMas_carmas().getClave(), carMasXMas.getCarMasMas_valor())).collect(Collectors.toList());
 
+        em.close();
+
         return res;
     }
 
@@ -161,6 +175,8 @@ public class BDUtils {
 
         HashMap<String, String> res = new HashMap<String,String>();
         preguntas.stream().map(p -> res.put(p.getPregunta(), p.getRespuesta())).collect(Collectors.toList());
+
+        em.close();
         return res;
 
     }
@@ -170,6 +186,8 @@ public class BDUtils {
         EntityManager em = BDUtils.getEntityManager();
 
         AdoptanteBD adoptanteBD = em.find(AdoptanteBD.class,personaID);
+
+        em.close();
 
         return adoptanteBD.transformar();
 
@@ -188,6 +206,8 @@ public class BDUtils {
 
         adoptanteBD.getComodidades().stream().map(comodidadesXadoptante -> res.put(comodidadesXadoptante.getComoXad_como().getComo_clave(), comodidadesXadoptante.getComXado_valor())).collect(Collectors.toList());
 
+        em.close();
+
         return res;
 
 
@@ -203,6 +223,8 @@ public class BDUtils {
 
         adoptanteBD.getPreferencias().stream().map(preferenciaXAdoptante -> res.put(preferenciaXAdoptante.getPrefXado_pref().getPref_clave(), preferenciaXAdoptante.getPrefXado_valor())).collect(Collectors.toList());
 
+        em.close();
+
         return res;
 
     }
@@ -213,6 +235,7 @@ public class BDUtils {
 
         UsuarioBD usuarioBD = (UsuarioBD) em.createQuery("from UsuarioBD where usu_nombre = '" + usuario_email +"' or usu_email = '" + usuario_email +"' and usu_contrasena = '" + contrasenia + "'").getResultList().get(0);
 
+        em.close();
 
         return usuarioBD.transformar();
     }
@@ -222,6 +245,8 @@ public class BDUtils {
         EntityManager em = BDUtils.getEntityManager();
 
         DuenioBD duenio = (DuenioBD) em.createQuery("from DuenioBD where pers_usuario.usu_id = '"+id+"'").getResultList().get(0);
+
+        em.close();
 
         return duenio;
 
@@ -242,6 +267,8 @@ public class BDUtils {
 
         PersonaBD persona = (PersonaBD) em.createQuery("from PersonaBD where pers_usuario = '" + id + "'").getResultList().get(0);
 
+        em.close();
+
         return persona;
 
     }
@@ -251,6 +278,8 @@ public class BDUtils {
         EntityManager em = BDUtils.getEntityManager();
 
         List<CaracteristicaOrg> caracteristicas = em.createQuery("from CaracteristicaOrg where caor_organizacion = '" + id + "'").getResultList();
+
+        em.close();
 
         return caracteristicas;
 
