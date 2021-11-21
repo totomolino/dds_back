@@ -15,7 +15,8 @@
             <property name="hibernate.connection.autoReconnect" value="true"/>
             <property name="hibernate.connection.username" value="qubxodnjhgrkfb"/>
             <property name="hibernate.connection.password" value="c2d60356c8bd9f3f40c0360b5834b9031ff4594c85686e7870f0fd278b4278ea"/>
-            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL82Dialect"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL95Dialect"/>
+            <property name="hibernate.temp.use_jdbc_metadata_defaults" value="false" />
             <!--<property name="hibernate.hbm2ddl.auto" value="create-drop"/>-->
             <property name="hibernate.hbm2ddl.auto" value="update"/>
             <property name="hibernate.show_sql" value="true"/>
