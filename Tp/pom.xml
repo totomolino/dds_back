@@ -127,7 +127,7 @@
                     <appName>patitasback</appName>
                     <processTypes>
                         <!-- Tell Heroku how to launch your application -->
-                        <web>java -jar ./target/patitas-1.0-jar-with-dependencies.jar</web>
+                        <web>java -jar target/patitas-1.0-jar-with-dependencies.jar</web>
                     </processTypes>
                 </configuration>
             </plugin>
