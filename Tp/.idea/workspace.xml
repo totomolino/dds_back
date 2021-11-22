@@ -10,20 +10,81 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4fae556-e56c-4d2e-9322-f2a75ae1d720" name="Default Changelist" comment="Probamos el menu xd">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6d2cef77-b000-44f6-9940-3bd14372e9fc/entities/entities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6d2cef77-b000-44f6-9940-3bd14372e9fc/entities/entities.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jknack_handlebars_guava_cache_4_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_14_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sparkjava_spark_template_handlebars_2_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_5_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mozilla_rhino_1_7R4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/2e05c119f1491a3c96e826d6981c8c35.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/371fdbaaeddc587ddd4781a2297c5279.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/5558fee51e0b4fd6f59e3e8431d00137.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/60b0babd1e0e9492e9c2d5c782a398fc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/6e9a66e73b7e94f4f2b132ebc9c6e797.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/FotoMascotas.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/PerritoConFondo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/a77a9162d1b7e505245397a534ba5171.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/añadirFoto.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/batiburrillo-mascotas-kBiG--620x349abc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/caraPerrito.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/categoriaPerros/perro1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/categoriaPerros/perro2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/categoriaPerros/perro3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/categoriaPerros/perro4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/categoriaPerros/perro5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/categoriaPerros/perro6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/categoriaPerros/perro7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/categoriaPerros/perro8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/categoriaPerros/perro9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/encontrarMascota.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/fotoDescripcion.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/fotoParaVideo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/golden.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/grupoPerritos.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/huella.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/images.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/kisspng-cat-domestic-animal-dog-domestic-rabbit-felix-le-chat-pub-5b458a52a965b0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/kisspng-dog-cat-puppy-kitten-pet-linavet-como-tratar-o-cachorro-anmico-com-base-n-5be27e6b252de1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/logoBlanco.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/logoFinal.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/logoSinFondo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/mascota-adecuada.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/mascotas-678x381.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/patitadeVerdad.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/patitapro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/patitas.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/perritoCostado.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/portada2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/portada3.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/portadaAdoptar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/portadaInicio.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/portadaPerfil.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/tres-gatitos-en-una-cesta-un-fondo-blanco-140770712.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/undraw_Add_user_re_5oib.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/undraw_Bus_stop_re_h8ej.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/undraw_Nature_fun_re_iney.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/undraw_Playful_cat_re_bxiu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/undraw_decorative_friends_q2np.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/undraw_good_doggy_4wfq.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/undraw_playing_fetch_cm19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fotos/undraw_woman_mevk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/iniciarSesion.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/6d2cef77-b000-44f6-9940-3bd14372e9fc/entities/entities.dat.values" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6d2cef77-b000-44f6-9940-3bd14372e9fc/entities/entities.dat.values" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6d2cef77-b000-44f6-9940-3bd14372e9fc/entities/entities.dat.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6d2cef77-b000-44f6-9940-3bd14372e9fc/entities/entities.dat.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/6d2cef77-b000-44f6-9940-3bd14372e9fc/entities/entities.dat.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6d2cef77-b000-44f6-9940-3bd14372e9fc/entities/entities.dat.values.s" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6d2cef77-b000-44f6-9940-3bd14372e9fc/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6d2cef77-b000-44f6-9940-3bd14372e9fc/entities/entities.dat_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d872c045-6c79-4050-bce3-658420c700b2/entities/entities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d872c045-6c79-4050-bce3-658420c700b2/entities/entities.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/d872c045-6c79-4050-bce3-658420c700b2/entities/entities.dat.values" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d872c045-6c79-4050-bce3-658420c700b2/entities/entities.dat.values" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d872c045-6c79-4050-bce3-658420c700b2/entities/entities.dat.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d872c045-6c79-4050-bce3-658420c700b2/entities/entities.dat.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/d872c045-6c79-4050-bce3-658420c700b2/entities/entities.dat.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d872c045-6c79-4050-bce3-658420c700b2/entities/entities.dat.values.s" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d872c045-6c79-4050-bce3-658420c700b2/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d872c045-6c79-4050-bce3-658420c700b2/entities/entities.dat_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d872c045-6c79-4050-bce3-658420c700b2/entities/entities.dat_i.len" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d872c045-6c79-4050-bce3-658420c700b2/entities/entities.dat_i.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jknack_handlebars_4_3_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jknack_handlebars_4_0_6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/BDUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/BDUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoIntegrador.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoIntegrador.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Sistema/Sistema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sistema/Sistema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/my-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/iniciarSesion.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Sistema/Sistema.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Sistema/Sistema.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/my-styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/BDUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/BDUtils.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -306,7 +367,7 @@
       <workItem from="1637429691433" duration="2807000" />
       <workItem from="1637437552585" duration="2519000" />
       <workItem from="1637504650993" duration="4825000" />
-      <workItem from="1637585609809" duration="4504000" />
+      <workItem from="1637585609809" duration="7330000" />
     </task>
     <task id="LOCAL-00001" summary="Cambie la dependencia junit a 4.13.1">
       <created>1619485615853</created>

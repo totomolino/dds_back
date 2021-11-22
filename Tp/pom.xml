@@ -83,9 +83,9 @@
             <version>42.2.1</version>
         </dependency>
         <dependency>
-            <groupId>com.github.jknack</groupId> <!--templating engine elegido-->
-            <artifactId>handlebars</artifactId>
-            <version>4.3.0</version>
+            <groupId>com.sparkjava</groupId>
+            <artifactId>spark-template-handlebars</artifactId>
+            <version>2.7.1</version>
         </dependency>
 
     </dependencies>

@@ -14,9 +14,11 @@ import dominioBD.*;
 import mappers.*;
 import respuestas.*;
 import seguridad.register;
+import spark.ModelAndView;
 import spark.Request;
 import spark.Response;
 import spark.Spark;
+import spark.template.handlebars.HandlebarsTemplateEngine;
 import utils.BDUtils;
 import utils.SesionManager;
 
@@ -289,9 +291,25 @@ public class Sistema {
         Spark.get("/duenio/mascotas", Sistema::devolverMascotas);
         Spark.get("/orga/caracteristicas/:id", Sistema::dameCaracteristicas);
         Spark.get("/hogares", Sistema::dameHogares);
+        Spark.get("/iniciarSesionLiviano", Sistema::iniciarSesionLiviano);
+        Spark.get("/indexLiviano", Sistema::indexLiviano);
 
 
         //Spark.post("/publicacionPerdida", Sistema::crearPubPerdida);
+    }
+
+    private static String indexLiviano(Request req, Response res) {
+
+        Map<String, Object> model = new HashMap<>();
+
+        return new HandlebarsTemplateEngine().render(new ModelAndView(model, "index.hbs"));
+    }
+
+    private static String iniciarSesionLiviano(Request request, Response res) {
+
+        Map<String, Object> model = new HashMap<>();
+
+        return new HandlebarsTemplateEngine().render(new ModelAndView(model, "iniciarSesion.hbs"));
     }
 
     private static String dameHogares(Request req, Response res) throws IOException {

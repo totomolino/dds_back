@@ -14,8 +14,7 @@ import java.io.IOException;
 import static org.quartz.CronScheduleBuilder.cronSchedule;
 import static org.quartz.JobBuilder.newJob;
 import static org.quartz.TriggerBuilder.newTrigger;
-import static spark.Spark.before;
-import static spark.Spark.options;
+import static spark.Spark.*;
 
 public class Main {
 
@@ -39,6 +38,7 @@ public class Main {
         scheduler.scheduleJob(job, trigger);
 
         Spark.port(getHerokuAssignedPort());
+        staticFileLocation("/static");
         Spark.path("/patitas", Sistema::definePaths);
         Spark.get("/prueba", Main::devolverAlgo);
 
