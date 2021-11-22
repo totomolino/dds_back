@@ -58,9 +58,6 @@ function encontreMascota(){
   window.location.href = "./encontreUnaMascota.html?id=-1"
 }
 
-
-
-
     esAdmin: function(){
       return localStorage.getItem("TIPO") == "ADMIN"
     },

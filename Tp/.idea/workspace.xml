@@ -10,13 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4fae556-e56c-4d2e-9322-f2a75ae1d720" name="Default Changelist" comment="Probamos el menu xd">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/iniciarSesionLiviano.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Sistema/Sistema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sistema/Sistema.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/iniciarSesion.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/iniciarSesion.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/iniciarSesion.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/iniciarSesion.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/menu.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -300,7 +294,7 @@
       <workItem from="1637429691433" duration="2807000" />
       <workItem from="1637437552585" duration="2519000" />
       <workItem from="1637504650993" duration="4825000" />
-      <workItem from="1637585609809" duration="9902000" />
+      <workItem from="1637585609809" duration="10154000" />
     </task>
     <task id="LOCAL-00001" summary="Cambie la dependencia junit a 4.13.1">
       <created>1619485615853</created>
