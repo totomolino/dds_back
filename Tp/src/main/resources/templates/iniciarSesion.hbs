@@ -66,17 +66,17 @@
                         <fieldset>
                           <div >
                             <label>
-                                <input placeholder="Ingrese nombre de usuario" v-model="username" type="text" name="usuario" id="usuario" value="" required>
+                                <input placeholder="Ingrese nombre de usuario" type="text" name="usuario" id="usuario"  required>
                             </label>
                             <br> <br>
                             <label>
-                                <input placeholder="Ingrese contraseña"  v-model="password" type="password" name="contrasenia" id="contrasenia" value="" required>
+                                <input placeholder="Ingrese contraseña" type="password" name="contrasenia" id="contrasenia"  required>
                             </label>
                             <br> <br>
                             <section>
-                              <button class="boton-iniciarSesion">Iniciar Sesion</button>
-                              <a id="anchorID" href="index.html" target = "_self"></a>
-                              <a id="anchorID2" href="Formulario.html" target = "_self"></a>
+                              <button class="boton-iniciarSesion" onclick="login()">Iniciar Sesion</button>
+                              <a id="anchorID" href=""  target = "_self" onclick="nombre()"></a>
+                              {{!-- <a id="anchorID2" href="Formulario.html" target = "_self"></a> --}}
                             </section>
                             <section>
                                 <br>
@@ -138,6 +138,6 @@
             </section>
         </section>
       </footer>
-
+    <script type="text/javascript" src="../iniciarSesionLiviano.js"></script>
 </body>
 </html>

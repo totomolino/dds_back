@@ -300,7 +300,13 @@ public class Sistema {
 
     private static String indexLiviano(Request req, Response res) {
 
+        String idSesion = req.headers("id");
+
+        Usuario usuario = SesionManager.get().dameUsuario(idSesion);
+
         Map<String, Object> model = new HashMap<>();
+
+        model.put("user",usuario);
 
         return new HandlebarsTemplateEngine().render(new ModelAndView(model, "index.hbs"));
     }
