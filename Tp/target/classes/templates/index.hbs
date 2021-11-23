@@ -60,45 +60,43 @@
                 <section >
                   <a href="index.html" type="button" class="boton-menu">INICIO</a>
                 </section>
-                <section >
                     {{#if esDuenio}}
+                <section >
                     <a href="adoptar.html" type="button" class="boton-menu">ADOPTAR</a>
-                    {{/if}}
-                </section>
+                </section>                    
                 <section >
-                    {{#if esDuenio}}
                     <a href="darEnAdopcion.html" type="button" class="boton-menu">DAR EN ADOPCION</a>
-                    {{/if}}
                 </section>
+                    {{/if}}
 
-                <section >
                     {{#if esDuenioORescatista}}
+                <section >
                     <a onclick="encontreMascota();" type="button" class="boton-menu">ENCONTRE A UNA MASCOTA</a>
-                    {{/if}}
                 </section>                
-                <section >
+                    {{/if}}
                     {{#if esDuenio}}
-                    <a href="registrarMascota.html" type="button" class="boton-menu">REGITSTRAR MASCOTA</a>
-                    {{/if}}
-                </section>
                 <section >
-                    {{#if esDuenioORescatista}} 
-                    <a href="hogaresDeTransito.html" type="button" class="boton-menu"> HOGARES DE TRANSITO</a>
-                    {{/if}}
+                    <a href="registrarMascota.html" type="button" class="boton-menu">REGITSTRAR MASCOTA</a>
                 </section>
+                    {{/if}}
+                    {{#if esDuenioORescatista}} 
+                <section >
+                    <a href="hogaresDeTransito.html" type="button" class="boton-menu"> HOGARES DE TRANSITO</a>
+                </section>
+                    {{/if}}
                 <section>
                     <a href="mascotasPerdidasPubli.html" type="button" class="boton-menu">MASCOTAS PERDIDAS</a>
                 </section>
-                 <section >
                     {{#if esVoluntario}}
+                 <section >
                     <a href="aprobarPublicaciones.html" type="button" class="boton-menu">APROBAR PUBLICACIONES</a>
+                </section>
                     {{/if}}
-                </section>
-                <section >
                     {{#if esAdmin}}
+                <section >
                   <a href="administrador.html" type="button" class="boton-menu">CONFIGURAR PARAMETROS</a>
-                  {{/if}}
                 </section>
+                  {{/if}}
                 <section>
                     <a href="iniciarSesion.html" type="button" class="boton-menu">CERRAR SESION</a>
                 </section>
