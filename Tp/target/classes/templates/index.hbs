@@ -34,8 +34,8 @@
             <div class="usuario-icon">
                 <i class="fas fa-user-circle"></i>
             </div>
-            <div id= appVue>          
-              <p>{{nombre}}</p>          
+            <div >          
+              <p>{{user.nombre}}</p>          
     
             </div>
           </div>
@@ -60,30 +60,44 @@
                 <section >
                   <a href="index.html" type="button" class="boton-menu">INICIO</a>
                 </section>
-                <section v-if="esDuenio()">
+                <section >
+                    {{#if esDuenio}}
                     <a href="adoptar.html" type="button" class="boton-menu">ADOPTAR</a>
+                    {{/if}}
                 </section>
-                <section v-if="esDuenio()">
+                <section >
+                    {{#if esDuenio}}
                     <a href="darEnAdopcion.html" type="button" class="boton-menu">DAR EN ADOPCION</a>
+                    {{/if}}
                 </section>
 
-                <section v-if="esDuenioORescatista()">
+                <section >
+                    {{#if esDuenioORescatista}}
                     <a onclick="encontreMascota();" type="button" class="boton-menu">ENCONTRE A UNA MASCOTA</a>
+                    {{/if}}
                 </section>                
-                <section v-if="esDuenio()">
+                <section >
+                    {{#if esDuenio}}
                     <a href="registrarMascota.html" type="button" class="boton-menu">REGITSTRAR MASCOTA</a>
+                    {{/if}}
                 </section>
-                <section v-if="esDuenioORescatista()"> 
+                <section >
+                    {{#if esDuenioORescatista}} 
                     <a href="hogaresDeTransito.html" type="button" class="boton-menu"> HOGARES DE TRANSITO</a>
+                    {{/if}}
                 </section>
                 <section>
                     <a href="mascotasPerdidasPubli.html" type="button" class="boton-menu">MASCOTAS PERDIDAS</a>
                 </section>
-                 <section v-if = "esVoluntario()">
+                 <section >
+                    {{#if esVoluntario}}
                     <a href="aprobarPublicaciones.html" type="button" class="boton-menu">APROBAR PUBLICACIONES</a>
+                    {{/if}}
                 </section>
-                <section v-if = "esAdmin()">
+                <section >
+                    {{#if esAdmin}}
                   <a href="administrador.html" type="button" class="boton-menu">CONFIGURAR PARAMETROS</a>
+                  {{/if}}
                 </section>
                 <section>
                     <a href="iniciarSesion.html" type="button" class="boton-menu">CERRAR SESION</a>
@@ -161,7 +175,7 @@
 
         </section>
       </footer>
-      {{!-- <script type="text/javascript" src="../jscript/menu.js"></script> --}}
+      <script type="text/javascript" src="../menu.js"></script>
       
 </body>
 </html>

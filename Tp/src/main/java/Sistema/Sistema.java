@@ -300,7 +300,7 @@ public class Sistema {
 
     private static String indexLiviano(Request req, Response res) {
 
-        String idSesion = req.headers("id");
+        String idSesion = req.queryParams("id");
 
         Usuario usuario = SesionManager.get().dameUsuario(idSesion);
 
