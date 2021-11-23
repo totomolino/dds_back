@@ -123,19 +123,7 @@
                     </archive>
                 </configuration>
             </plugin>
-<!--            <plugin>-->
-<!--                <groupId>com.heroku.sdk</groupId>-->
-<!--                <artifactId>heroku-maven-plugin</artifactId>-->
-<!--                <version>2.0.3</version>-->
-<!--                <configuration>-->
-<!--                    <jdkVersion>1.8</jdkVersion>-->
-<!--                    <appName>patitasback</appName>-->
-<!--                    <processTypes>-->
-<!--                        &lt;!&ndash; Tell Heroku how to launch your application &ndash;&gt;-->
-<!--                        <web>java -jar target/patitas-1.0-jar-with-dependencies.jar</web>-->
-<!--                    </processTypes>-->
-<!--                </configuration>-->
-<!--            </plugin>-->
+
         </plugins>
 
         <resources>
