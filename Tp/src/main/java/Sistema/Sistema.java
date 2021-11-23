@@ -293,9 +293,29 @@ public class Sistema {
         Spark.get("/hogares", Sistema::dameHogares);
         Spark.get("/iniciarSesionLiviano", Sistema::iniciarSesionLiviano);
         Spark.get("/indexLiviano", Sistema::indexLiviano);
+        Spark.get("/damePreguntas/:id", Sistema::damePreguntas);
 
 
         //Spark.post("/publicacionPerdida", Sistema::crearPubPerdida);
+    }
+
+    private static String damePreguntas(Request request, Response res) {
+
+        String idOrg = request.headers("id");
+
+        List<PreguntaOrg> preguntas = BDUtils.damePreguntas(Integer.parseInt(idOrg));
+
+        res.type("application/json");
+
+        if(preguntas.isEmpty()){
+            res.status(400);
+            return new mensaje("No hay preguntas").transformar();
+        }
+
+        res.status(200);
+
+        return new Gson().toJson(new listaPreguntas(preguntas));
+
     }
 
     private static String indexLiviano(Request req, Response res) {

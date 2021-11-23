@@ -334,4 +334,18 @@ public class BDUtils {
         return caracteristicas;
 
     }
+
+    public static List<PreguntaOrg> damePreguntas(int idOrg) {
+
+        EntityManager em = BDUtils.getEntityManager();
+
+        List<PreguntaOrg> preguntas = em.createQuery("from pregunta_org where org_id = '" + idOrg + "'").getResultList();
+
+        BDUtils.commit(em);
+
+        em.close();
+
+        return preguntas;
+
+    }
 }
