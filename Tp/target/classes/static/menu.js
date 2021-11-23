@@ -51,11 +51,12 @@ window.onclick = function(event) {
 }
 
 
-Handlebars.registerHelper('esAdmin', esAdmin())
-Handlebars.registerHelper('esDuenio', esDuenio())
-Handlebars.registerHelper('esRescatista', esRescatista())
-Handlebars.registerHelper('esVoluntario', esVoluntario())
-Handlebars.registerHelper('esDuenioORescatista', esDuenioORescatista())
+
+Handlebars.registerHelper('esAdmin', esAdmin)
+Handlebars.registerHelper('esDuenio', esDuenio)
+Handlebars.registerHelper('esRescatista', esRescatista)
+Handlebars.registerHelper('esVoluntario', esVoluntario)
+Handlebars.registerHelper('esDuenioORescatista', esDuenioORescatista)
 
 
 function encontreMascota(){
