@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="TrabajoIntegrador:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b4fae556-e56c-4d2e-9322-f2a75ae1d720" name="Default Changelist" comment="Probamos el menu xd">
+      <change beforePath="$PROJECT_DIR$/.jpb/jpb-settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoIntegrador.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contras.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Business/Administrador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Business/Adoptante.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Business/Contacto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Business/Duenio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Business/Especie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Business/Foto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Business/Mascota.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Business/Organizacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Business/Persona.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Business/Rescate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Business/Rescatista.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Business/Tamanio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Business/TipoDeUsuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Business/Usuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Business/Voluntario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Business/hogarDeTransito.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Business/mainTrucho.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Business/publicaciones/Publicacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Business/publicaciones/PublicacionAdoptar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Business/publicaciones/PublicacionDarEnAdopcion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Business/publicaciones/PublicacionPerdida.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Business/services/apiHogares/ApiHogaresService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Business/services/apiHogares/apiHogares.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Business/services/apiHogares/entities/Error.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Business/services/apiHogares/entities/Hogar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Business/services/apiHogares/entities/Mensaje.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Business/services/apiHogares/entities/hogaresDeTransito.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Business/services/apiHogares/mainTrucho.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Notificar/EMAIL.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Notificar/SMS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Notificar/WHATSAPP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Notificar/notificarStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Notificar/twilio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Sistema/Sistema.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/clieLiviano/IniciarSesion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominioBD/AdministradorBD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominioBD/AdoptanteBD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominioBD/CarMasXMas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominioBD/CaracOrgXmascota.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominioBD/CaracteristicaMascota.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominioBD/CaracteristicaOrg.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominioBD/ComodidadesBD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominioBD/ComodidadesXadoptante.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominioBD/ContactoBD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominioBD/DuenioBD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominioBD/FormaNotifCont.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominioBD/FormaNotifPers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominioBD/FotoAnimales.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominioBD/FotoRescate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominioBD/MascotaBD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominioBD/OrganizacionBD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominioBD/PersonaBD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominioBD/PreferenciaBD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominioBD/PreferenciaXAdoptante.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominioBD/PregOrgXmascota.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominioBD/PreguntaOrg.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominioBD/PreguntasObligatorias.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominioBD/PublicacionAdoptarBD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominioBD/PublicacionBD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominioBD/PublicacionDarEnAdopcionBD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominioBD/PublicacionPerdidaBD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominioBD/RescateBD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominioBD/RescatistaBD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominioBD/UsuarioBD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominioBD/VoluntarioBD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominioBD/pregPublicacionDarEnAdopcion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dominioBD/prueba.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mappers/caracMascota.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mappers/fotosMascota.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mappers/hashmapMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mappers/listaCarac.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mappers/listaHogares.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mappers/listaMasc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mappers/listaPreguntas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mappers/listaPublicacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mappers/usuarioIniciarSesion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/respuestas/claseJSon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/respuestas/devolverMascota.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/respuestas/devolverObjeto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/respuestas/id.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/respuestas/loginResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/respuestas/mascotaSimple.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/respuestas/mensaje.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/respuestas/objeto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/respuestas/userName.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/respuestas/usuarioCreado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/seguridad/register.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/seguridad/reglasNist.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/BDUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/JsonTransformer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/SesionManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/views/menuPrincipal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/views/menuPruebas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/estilosIndex.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/2e05c119f1491a3c96e826d6981c8c35.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/371fdbaaeddc587ddd4781a2297c5279.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/5558fee51e0b4fd6f59e3e8431d00137.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/60b0babd1e0e9492e9c2d5c782a398fc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/6e9a66e73b7e94f4f2b132ebc9c6e797.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/FotoMascotas.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/PerritoConFondo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/a77a9162d1b7e505245397a534ba5171.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/añadirFoto.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/batiburrillo-mascotas-kBiG--620x349abc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/caraPerrito.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/categoriaPerros/perro1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/categoriaPerros/perro2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/categoriaPerros/perro3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/categoriaPerros/perro4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/categoriaPerros/perro5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/categoriaPerros/perro6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/categoriaPerros/perro7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/categoriaPerros/perro8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/categoriaPerros/perro9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/encontrarMascota.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/fotoDescripcion.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/fotoParaVideo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/golden.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/grupoPerritos.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/huella.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/images.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/kisspng-cat-domestic-animal-dog-domestic-rabbit-felix-le-chat-pub-5b458a52a965b0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/kisspng-dog-cat-puppy-kitten-pet-linavet-como-tratar-o-cachorro-anmico-com-base-n-5be27e6b252de1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/logoBlanco.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/logoFinal.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/logoSinFondo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/mascota-adecuada.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/mascotas-678x381.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/patitadeVerdad.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/patitapro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/patitas.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/perritoCostado.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/portada2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/portada3.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/portadaAdoptar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/portadaInicio.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/portadaPerfil.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/tres-gatitos-en-una-cesta-un-fondo-blanco-140770712.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/undraw_Add_user_re_5oib.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/undraw_Bus_stop_re_h8ej.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/undraw_Nature_fun_re_iney.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/undraw_Playful_cat_re_bxiu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/undraw_decorative_friends_q2np.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/undraw_good_doggy_4wfq.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/undraw_playing_fetch_cm19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fotos/undraw_woman_mevk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/iniciarSesion.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/iniciarSesionLiviano.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/iniciarSesion.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/pruebas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/Administrador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/Adoptante.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/Contacto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/Duenio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/Especie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/Foto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/Mascota.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/Organizacion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/Persona.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/Rescate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/Rescatista.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/Tamanio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/TipoDeUsuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/Usuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/Voluntario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/hogarDeTransito.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/mainTrucho.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/publicaciones/Publicacion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/publicaciones/PublicacionAdoptar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/publicaciones/PublicacionDarEnAdopcion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/publicaciones/PublicacionPerdida.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/services/apiHogares/ApiHogaresService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/services/apiHogares/apiHogares.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/services/apiHogares/entities/Error.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/services/apiHogares/entities/Hogar$Admisiones.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/services/apiHogares/entities/Hogar$Ubicacion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/services/apiHogares/entities/Hogar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/services/apiHogares/entities/Mensaje.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/services/apiHogares/entities/hogaresDeTransito.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Business/services/apiHogares/mainTrucho.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Notificar/EMAIL.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Notificar/SMS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Notificar/WHATSAPP.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Notificar/notificarStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Notificar/twilio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Sistema/Sistema.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/clieLiviano/IniciarSesion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/AdministradorBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/AdoptanteBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/CarMasXMas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/CaracOrgXmascota.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/CaracteristicaMascota.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/CaracteristicaOrg.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/ComodidadesBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/ComodidadesXadoptante.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/ContactoBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/DuenioBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/FormaNotifCont.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/FormaNotifPers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/FotoAnimales.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/FotoRescate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/MascotaBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/OrganizacionBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/PersonaBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/PreferenciaBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/PreferenciaXAdoptante.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/PregOrgXmascota.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/PreguntaOrg.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/PreguntasObligatorias.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/PublicacionAdoptarBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/PublicacionBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/PublicacionDarEnAdopcionBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/PublicacionPerdidaBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/RescateBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/RescatistaBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/UsuarioBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/VoluntarioBD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/pregPublicacionDarEnAdopcion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dominioBD/prueba.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main$RecomendarAdopcion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mappers/caracMascota.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mappers/fotosMascota.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mappers/hashmapMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mappers/listaCarac.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mappers/listaHogares.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mappers/listaMasc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mappers/listaPreguntas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mappers/listaPublicacion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mappers/usuarioIniciarSesion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/respuestas/claseJSon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/respuestas/devolverMascota.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/respuestas/devolverObjeto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/respuestas/id.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/respuestas/loginResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/respuestas/mascotaSimple.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/respuestas/mensaje.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/respuestas/objeto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/respuestas/userName.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/respuestas/usuarioCreado.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/seguridad/register.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/seguridad/reglasNist.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/estilosIndex.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/2e05c119f1491a3c96e826d6981c8c35.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/371fdbaaeddc587ddd4781a2297c5279.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/5558fee51e0b4fd6f59e3e8431d00137.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/60b0babd1e0e9492e9c2d5c782a398fc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/6e9a66e73b7e94f4f2b132ebc9c6e797.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/FotoMascotas.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/PerritoConFondo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/a77a9162d1b7e505245397a534ba5171.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/añadirFoto.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/batiburrillo-mascotas-kBiG--620x349abc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/caraPerrito.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/categoriaPerros/perro1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/categoriaPerros/perro2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/categoriaPerros/perro3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/categoriaPerros/perro4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/categoriaPerros/perro5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/categoriaPerros/perro6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/categoriaPerros/perro7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/categoriaPerros/perro8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/categoriaPerros/perro9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/encontrarMascota.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/fotoDescripcion.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/fotoParaVideo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/golden.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/grupoPerritos.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/huella.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/images.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/kisspng-cat-domestic-animal-dog-domestic-rabbit-felix-le-chat-pub-5b458a52a965b0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/kisspng-dog-cat-puppy-kitten-pet-linavet-como-tratar-o-cachorro-anmico-com-base-n-5be27e6b252de1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/logoBlanco.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/logoFinal.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/logoSinFondo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/mascota-adecuada.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/mascotas-678x381.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/patitadeVerdad.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/patitapro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/patitas.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/perritoCostado.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/portada2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/portada3.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/portadaAdoptar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/portadaInicio.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/portadaPerfil.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/tres-gatitos-en-una-cesta-un-fondo-blanco-140770712.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/undraw_Add_user_re_5oib.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/undraw_Bus_stop_re_h8ej.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/undraw_Nature_fun_re_iney.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/undraw_Playful_cat_re_bxiu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/undraw_decorative_friends_q2np.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/undraw_good_doggy_4wfq.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/undraw_playing_fetch_cm19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fotos/undraw_woman_mevk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/iniciarSesion.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/iniciarSesionLiviano.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/iniciarSesion.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/BDUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/JsonTransformer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/SesionManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/views/menuPrincipal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/views/menuPruebas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/patitas-1.0-jar-with-dependencies.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/patitas-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/pruebas.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="JUnit4 Test Class" />
+        <option value="AnnotationType" />
+        <option value="JpaEntity" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar!/javax/persistence/OneToMany.class" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="JPA Inspector" value="true" />
+        <entry key="JPA Palette" value="true" />
+        <entry key="JPA Structure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="JPA Inspector" value="false" />
+        <entry key="JPA Palette" value="false" />
+        <entry key="JPA Structure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectId" id="1riutvLefbhew94E368Hr8dldjN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mariadb&#10;postgresql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="codeWithMe.voiceChat.enabledByDefault" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/target" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.16611296" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="jpb.entityDeclaration" />
+  </component>
+  <component name="ReaderModeSettings">
+    <option name="enabled" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="mappers" />
+      <recent name="Business" />
+      <recent name="domain.seguridad" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Facultad_Aparte\3ro\DDS\DDS_Grupo_1\Tp\src\main\java\domain\seguridad" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Facultad_Aparte\3ro\DDS\dds_back\Tp\src\main\resources\static" />
+      <recent name="E:\Facultad_Aparte\3ro\DDS\DDS_Grupo_1\Tp\src\main\Front" />
+      <recent name="E:\Facultad_Aparte\3ro\DDS\DDS_Grupo_1\Tp\src\main\resources\META-INF" />
+      <recent name="E:\Facultad_Aparte\3ro\DDS\DDS_Grupo_1\Tp\src\main\java\META-INF" />
+      <recent name="E:\Facultad_Aparte\3ro\DDS\DDS_Grupo_1\Tp\src\main" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="domain.seguridad" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="tests" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="dominioBD" />
+      <recent name="Business.publicaciones" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="HelloWorld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Business.HelloWorld" />
+      <module name="TrabajoIntegrador" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Business.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="TrabajoIntegrador" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mainTrucho (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Business.services.apiHogares.mainTrucho" />
+      <module name="TrabajoIntegrador" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Business.services.apiHogares.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mainTrucho" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Business.mainTrucho" />
+      <module name="TrabajoIntegrador" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Business.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="prueba" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dominioBD.prueba" />
+      <module name="TrabajoIntegrador" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dominioBD.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.mainTrucho" />
+        <item itemvalue="Application.mainTrucho (1)" />
+        <item itemvalue="Application.prueba" />
+        <item itemvalue="Application.HelloWorld" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b4fae556-e56c-4d2e-9322-f2a75ae1d720" name="Default Changelist" comment="" />
+      <created>1619471451163</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1619471451163</updated>
+      <workItem from="1619471455389" duration="2066000" />
+      <workItem from="1619484533329" duration="3401000" />
+      <workItem from="1619487975183" duration="60000" />
+      <workItem from="1619488373894" duration="16000" />
+      <workItem from="1619611274218" duration="233000" />
+      <workItem from="1619611523215" duration="2677000" />
+      <workItem from="1619623691637" duration="73000" />
+      <workItem from="1619623851612" duration="416000" />
+      <workItem from="1619631247805" duration="291000" />
+      <workItem from="1619662546982" duration="214000" />
+      <workItem from="1620067272404" duration="6151000" />
+      <workItem from="1620143264884" duration="54000" />
+      <workItem from="1620143445456" duration="993000" />
+      <workItem from="1620147614044" duration="382000" />
+      <workItem from="1620221531385" duration="90000" />
+      <workItem from="1620866123585" duration="781000" />
+      <workItem from="1620909285759" duration="971000" />
+      <workItem from="1621438363641" duration="1150000" />
+      <workItem from="1622044808197" duration="1211000" />
+      <workItem from="1622485408021" duration="36000" />
+      <workItem from="1622485461092" duration="10000" />
+      <workItem from="1622487550322" duration="1711000" />
+      <workItem from="1623614195298" duration="6955000" />
+      <workItem from="1623695532542" duration="9124000" />
+      <workItem from="1623933211476" duration="482000" />
+      <workItem from="1623933762885" duration="647000" />
+      <workItem from="1623938314956" duration="3384000" />
+      <workItem from="1623942699238" duration="893000" />
+      <workItem from="1624538093404" duration="8452000" />
+      <workItem from="1624905371132" duration="10423000" />
+      <workItem from="1624993225082" duration="1011000" />
+      <workItem from="1626969491125" duration="1669000" />
+      <workItem from="1627136622209" duration="53000" />
+      <workItem from="1627136740070" duration="93000" />
+      <workItem from="1627137068684" duration="673000" />
+      <workItem from="1627310481572" duration="15000" />
+      <workItem from="1627310772499" duration="1808000" />
+      <workItem from="1627323447028" duration="11606000" />
+      <workItem from="1627476566985" duration="822000" />
+      <workItem from="1627477950781" duration="36000" />
+      <workItem from="1627479006261" duration="599000" />
+      <workItem from="1627481475621" duration="14238000" />
+      <workItem from="1627648726419" duration="17000" />
+      <workItem from="1627651834842" duration="2199000" />
+      <workItem from="1627669442192" duration="9791000" />
+      <workItem from="1627994635099" duration="117000" />
+      <workItem from="1628015836585" duration="5198000" />
+      <workItem from="1628600419498" duration="2894000" />
+      <workItem from="1628944915463" duration="541000" />
+      <workItem from="1628968329299" duration="107000" />
+      <workItem from="1630502004547" duration="3642000" />
+      <workItem from="1631046958189" duration="4206000" />
+      <workItem from="1631191946091" duration="4039000" />
+      <workItem from="1631796298369" duration="4901000" />
+      <workItem from="1632313290456" duration="7117000" />
+      <workItem from="1632402657085" duration="5711000" />
+      <workItem from="1632767501002" duration="5717000" />
+      <workItem from="1632920363025" duration="7962000" />
+      <workItem from="1632940325038" duration="13321000" />
+      <workItem from="1632963478138" duration="5390000" />
+      <workItem from="1633521913224" duration="12756000" />
+      <workItem from="1633608694645" duration="12334000" />
+      <workItem from="1633718216665" duration="6136000" />
+      <workItem from="1633725258934" duration="34000" />
+      <workItem from="1633977442707" duration="110000" />
+      <workItem from="1633978507124" duration="3997000" />
+      <workItem from="1634135727225" duration="3032000" />
+      <workItem from="1634152477509" duration="3423000" />
+      <workItem from="1634741394269" duration="61000" />
+      <workItem from="1634741510670" duration="8000" />
+      <workItem from="1634741630018" duration="506000" />
+      <workItem from="1634820140647" duration="3382000" />
+      <workItem from="1635338546116" duration="10965000" />
+      <workItem from="1635423808508" duration="5036000" />
+      <workItem from="1635431856311" duration="4105000" />
+      <workItem from="1635511470102" duration="11109000" />
+      <workItem from="1635944510287" duration="8512000" />
+      <workItem from="1636029272553" duration="8849000" />
+      <workItem from="1636133976068" duration="1412000" />
+      <workItem from="1636224669369" duration="11518000" />
+      <workItem from="1636634353460" duration="3099000" />
+      <workItem from="1637000535566" duration="1022000" />
+      <workItem from="1637065934980" duration="3742000" />
+      <workItem from="1637149719908" duration="10392000" />
+      <workItem from="1637239706115" duration="4994000" />
+      <workItem from="1637323542465" duration="9345000" />
+      <workItem from="1637351695898" duration="1469000" />
+      <workItem from="1637373557181" duration="1288000" />
+      <workItem from="1637375037651" duration="1455000" />
+      <workItem from="1637376719385" duration="1104000" />
+      <workItem from="1637411613447" duration="4736000" />
+      <workItem from="1637429691433" duration="2807000" />
+      <workItem from="1637437552585" duration="2519000" />
+      <workItem from="1637504650993" duration="4825000" />
+      <workItem from="1637585609809" duration="10154000" />
+      <workItem from="1637670660736" duration="8391000" />
+      <workItem from="1637689532780" duration="1668000" />
+    </task>
+    <task id="LOCAL-00001" summary="Cambie la dependencia junit a 4.13.1">
+      <created>1619485615853</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1619485615853</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Separe las clases en archivos distintos">
+      <created>1620866404116</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1620866404116</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.eclipse.jetty:jetty-security" />
+    <option featureType="dependencySupport" implementationName="java:org.junit.jupiter:junit-jupiter-params" />
+    <option featureType="dependencySupport" implementationName="java:commons-codec:commons-codec" />
+    <option featureType="dependencySupport" implementationName="java:org.eclipse.jetty.websocket:websocket-client" />
+    <option featureType="dependencySupport" implementationName="java:org.javassist:javassist" />
+    <option featureType="dependencySupport" implementationName="java:commons-cli:commons-cli" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate:hibernate-entitymanager" />
+    <option featureType="dependencySupport" implementationName="java:org.antlr:antlr-runtime" />
+    <option featureType="dependencySupport" implementationName="java:org.hamcrest:hamcrest-core" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.cassandra.deps:avro" />
+    <option featureType="dependencySupport" implementationName="java:org.junit.platform:junit-platform-engine" />
+    <option featureType="dependencySupport" implementationName="java:org.mortbay.jetty:jetty-util" />
+    <option featureType="dependencySupport" implementationName="java:org.quartz-scheduler:quartz" />
+    <option featureType="dependencySupport" implementationName="java:org.eclipse.jetty:jetty-servlet" />
+    <option featureType="dependencySupport" implementationName="java:javax.activation:javax.activation-api" />
+    <option featureType="dependencySupport" implementationName="java:org.jboss:jandex" />
+    <option featureType="dependencySupport" implementationName="java:com.squareup.okhttp3:okhttp" />
+    <option featureType="dependencySupport" implementationName="java:org.antlr:antlr" />
+    <option featureType="dependencySupport" implementationName="java:com.mchange:c3p0" />
+    <option featureType="dependencySupport" implementationName="java:org.codehaus.jackson:jackson-mapper-asl" />
+    <option featureType="dependencySupport" implementationName="java:com.googlecode.json-simple:json-simple" />
+    <option featureType="dependencySupport" implementationName="java:org.dom4j:dom4j" />
+    <option featureType="dependencySupport" implementationName="java:com.google.code.gson:gson" />
+    <option featureType="dependencySupport" implementationName="java:javax.servlet:servlet-api" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.cassandra:cassandra-all" />
+    <option featureType="dependencySupport" implementationName="java:org.eclipse.jetty.websocket:websocket-server" />
+    <option featureType="dependencySupport" implementationName="java:io.jsonwebtoken:jjwt-api" />
+    <option featureType="dependencySupport" implementationName="java:com.squareup.okio:okio" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml:classmate" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml.jackson.datatype:jackson-datatype-jsr310" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate.common:hibernate-commons-annotations" />
+    <option featureType="dependencySupport" implementationName="java:commons-io:commons-io" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate:hibernate-core" />
+    <option featureType="dependencySupport" implementationName="java:org.glassfish.jaxb:jaxb-runtime" />
+    <option featureType="dependencySupport" implementationName="java:org.eclipse.jetty:jetty-xml" />
+    <option featureType="dependencySupport" implementationName="java:com.twilio.sdk:twilio" />
+    <option featureType="dependencySupport" implementationName="java:org.codehaus.jackson:jackson-core-asl" />
+    <option featureType="dependencySupport" implementationName="java:org.mortbay.jetty:servlet-api" />
+    <option featureType="dependencySupport" implementationName="java:org.glassfish.jaxb:txw2" />
+    <option featureType="dependencySupport" implementationName="java:org.eclipse.jetty.websocket:websocket-servlet" />
+    <option featureType="dependencySupport" implementationName="java:com.squareup.retrofit2:retrofit" />
+    <option featureType="dependencySupport" implementationName="java:javax.persistence:javax.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec" />
+    <option featureType="dependencySupport" implementationName="java:commons-lang:commons-lang" />
+    <option featureType="dependencySupport" implementationName="java:org.opentest4j:opentest4j" />
+    <option featureType="dependencySupport" implementationName="java:com.sun.xml.fastinfoset:FastInfoset" />
+    <option featureType="dependencySupport" implementationName="java:org.junit.jupiter:junit-jupiter" />
+    <option featureType="dependencySupport" implementationName="java:junit:junit" />
+    <option featureType="dependencySupport" implementationName="java:org.junit.jupiter:junit-jupiter-engine" />
+    <option featureType="dependencySupport" implementationName="java:com.sparkjava:spark-core" />
+    <option featureType="dependencySupport" implementationName="java:com.googlecode.concurrentlinkedhashmap:concurrentlinkedhashmap-lru" />
+    <option featureType="dependencySupport" implementationName="java:com.github.stephenc.high-scale-lib:high-scale-lib" />
+    <option featureType="dependencySupport" implementationName="java:commons-logging:commons-logging" />
+    <option featureType="dependencySupport" implementationName="java:com.squareup.retrofit2:converter-gson" />
+    <option featureType="dependencySupport" implementationName="java:org.eclipse.jetty:jetty-webapp" />
+    <option featureType="dependencySupport" implementationName="java:javax.xml.bind:jaxb-api" />
+    <option featureType="dependencySupport" implementationName="java:org.jvnet.staxex:stax-ex" />
+    <option featureType="dependencySupport" implementationName="java:com.google.protobuf:protobuf-java" />
+    <option featureType="dependencySupport" implementationName="java:org.eclipse.jetty:jetty-server" />
+    <option featureType="dependencySupport" implementationName="java:org.eclipse.jetty:jetty-http" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.httpcomponents:httpcore" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml.jackson.core:jackson-annotations" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml.jackson.core:jackson-core" />
+    <option featureType="dependencySupport" implementationName="java:com.github.stephenc:jamm" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml.jackson.core:jackson-databind" />
+    <option featureType="dependencySupport" implementationName="java:org.mortbay.jetty:jetty" />
+    <option featureType="dependencySupport" implementationName="java:org.junit.platform:junit-platform-commons" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.thrift:libthrift" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.cassandra:cassandra-thrift" />
+    <option featureType="dependencySupport" implementationName="java:io.jsonwebtoken:jjwt-jackson" />
+    <option featureType="dependencySupport" implementationName="java:io.jsonwebtoken:jjwt-impl" />
+    <option featureType="dependencySupport" implementationName="java:org.jboss.logging:jboss-logging" />
+    <option featureType="dependencySupport" implementationName="java:commons-collections:commons-collections" />
+    <option featureType="dependencySupport" implementationName="java:jline:jline" />
+    <option featureType="dependencySupport" implementationName="java:org.slf4j:slf4j-api" />
+    <option featureType="dependencySupport" implementationName="java:com.google.guava:guava" />
+    <option featureType="dependencySupport" implementationName="java:org.yaml:snakeyaml" />
+    <option featureType="dependencySupport" implementationName="java:antlr:antlr" />
+    <option featureType="dependencySupport" implementationName="java:org.eclipse.jetty:jetty-io" />
+    <option featureType="dependencySupport" implementationName="java:org.eclipse.jetty.websocket:websocket-api" />
+    <option featureType="dependencySupport" implementationName="java:com.zaxxer:HikariCP-java7" />
+    <option featureType="dependencySupport" implementationName="java:com.sun.istack:istack-commons-runtime" />
+    <option featureType="dependencySupport" implementationName="java:org.junit.jupiter:junit-jupiter-api" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.httpcomponents:httpclient" />
+    <option featureType="dependencySupport" implementationName="java:mysql:mysql-connector-java" />
+    <option featureType="dependencySupport" implementationName="java:org.antlr:stringtemplate" />
+    <option featureType="dependencySupport" implementationName="java:org.eclipse.jetty:jetty-util" />
+    <option featureType="dependencySupport" implementationName="java:org.apiguardian:apiguardian-api" />
+    <option featureType="dependencySupport" implementationName="java:org.slf4j:slf4j-simple" />
+    <option featureType="dependencySupport" implementationName="java:com.mchange:mchange-commons-java" />
+    <option featureType="dependencySupport" implementationName="java:javax.servlet:javax.servlet-api" />
+    <option featureType="dependencySupport" implementationName="java:org.eclipse.jetty:jetty-client" />
+    <option featureType="dependencySupport" implementationName="java:net.bytebuddy:byte-buddy" />
+    <option featureType="dependencySupport" implementationName="java:org.eclipse.jetty.websocket:websocket-common" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Cambie la dependencia junit a 4.13.1" />
+    <MESSAGE value="Separe las clases en archivos distintos" />
+    <MESSAGE value="Hicimos el menu de pruebas" />
+    <MESSAGE value="Probamos el menu xd" />
+    <option name="LAST_COMMIT_MESSAGE" value="Probamos el menu xd" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint type="java-exception">
+          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint type="java-exception">
+          <properties class="com.google.gson.JsonSyntaxException" package="com.google.gson" />
+          <option name="timeStamp" value="16" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="spark.http.matching.RequestWrapper" memberName="delegate" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+</project>
