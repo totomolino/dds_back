@@ -673,11 +673,12 @@ public class Sistema {
     }
 
     private static String agregarPreguntasPubli(Request req, Response res) {
-       pregPublicacionDarEnAdopcion preguntas = new Gson().fromJson(req.body(), pregPublicacionDarEnAdopcion.class);
+       pregPublicacionDarEnAdopcionLista preguntas = new Gson().fromJson(req.body(), pregPublicacionDarEnAdopcionLista.class);
 
         res.type("application/json");
 
-        BDUtils.agregarObjeto(preguntas);
+        preguntas.getPreguntas().forEach(preg -> BDUtils.agregarObjeto(preg));
+
 
         res.status(200);
         return (new mensaje("Se agregaron las preguntas correctamente").transformar());
