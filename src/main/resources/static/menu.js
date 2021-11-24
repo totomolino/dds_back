@@ -59,6 +59,7 @@ Handlebars.registerHelper('esVoluntario', esVoluntario)
 Handlebars.registerHelper('esDuenioORescatista', esDuenioORescatista)
 
 
+
 function encontreMascota(){
   window.location.href = "./encontreUnaMascota.html?id=-1"
 }
