@@ -301,7 +301,7 @@ public class Sistema {
 
     private static String damePreguntas(Request request, Response res) {
 
-        String idOrg = request.headers("id");
+        String idOrg = request.params("id");
 
         List<PreguntaOrg> preguntas = BDUtils.damePreguntas(Integer.parseInt(idOrg));
 

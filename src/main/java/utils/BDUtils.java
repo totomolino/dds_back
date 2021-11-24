@@ -339,11 +339,9 @@ public class BDUtils {
 
         EntityManager em = BDUtils.getEntityManager();
 
-        List<PreguntaOrg> preguntas = em.createQuery("from pregunta_org where org_id = '" + idOrg + "'").getResultList();
+        List<PreguntaOrg> preguntas = em.createQuery("from PreguntaOrg where preg_org = '" + idOrg + "'").getResultList();
 
-        BDUtils.commit(em);
 
-        em.close();
 
         return preguntas;
 
