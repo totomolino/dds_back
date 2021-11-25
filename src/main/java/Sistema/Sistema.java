@@ -297,9 +297,27 @@ public class Sistema {
         Spark.get("/damePreguntas/:id", Sistema::damePreguntas);
         Spark.get("/damePreguntasMasc/:id", Sistema::damePreguntasMasc);
         Spark.get("/mascotaCarac/:id", Sistema::dameCaracteristicasMasc);
+        Spark.get("/mascota/:id", Sistema::dameMascota);
+
 
 
         //Spark.post("/publicacionPerdida", Sistema::crearPubPerdida);
+    }
+
+    private static String dameMascota(Request req, Response res) {
+        String idMasc = req.params("id");
+
+        MascotaBD mascota = BDUtils.buscarMascota(Integer.parseInt(idMasc));
+
+        List<pregPublicacionDarEnAdopcion> preguntas = BDUtils.damePreguntasMasc(Integer.parseInt(idMasc));
+
+        HashMap<String,String> caracteristicas = BDUtils.dameHashCaracteristicasMasc(Long.parseLong(idMasc));
+
+        List<hashmapJSON> caracJSON = new ArrayList<>();
+        caracteristicas.forEach((clave,valor) -> caracJSON.add(new hashmapJSON(clave,valor)));
+
+
+        return new Gson().toJson(new superMascota(mascota,preguntas,caracJSON));
     }
 
     private static String dameCaracteristicasMasc(Request req, Response res) {

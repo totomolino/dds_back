@@ -86,9 +86,6 @@ public class BDUtils {
 
         MascotaBD mascota = (MascotaBD) em.createQuery("from MascotaBD where masc_id= '"+id+"'").getResultList().get(0);
 
-        BDUtils.commit(em);
-
-        em.close();
 
         return mascota;
 
@@ -188,9 +185,7 @@ public class BDUtils {
 
         mascota.getCarMasXMas().stream().map(carMasXMas -> res.put(carMasXMas.getCarMasMas_carmas().getClave(), carMasXMas.getCarMasMas_valor())).collect(Collectors.toList());
 
-        BDUtils.commit(em);
 
-        em.close();
 
         return res;
     }

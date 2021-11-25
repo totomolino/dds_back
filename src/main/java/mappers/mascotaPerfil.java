@@ -1,13 +1,16 @@
-package Business;
+package mappers;
+
+import Business.Duenio;
+import Business.Especie;
+import Business.Foto;
+import Business.Mascota;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
-public class Mascota {
-    
+public class mascotaPerfil {
+
     Long id;
-    List<Foto> fotos = new ArrayList<>();
     Especie especie;
     String nombre;
     String apodo;
@@ -15,27 +18,23 @@ public class Mascota {
     String sexo;
     String descripcion;
     boolean tieneChapita;
-    Duenio duenio;
-    HashMap<String, String> caracteristicas;
+    List<Foto> fotos = new ArrayList<>();
 
-    
-
-    
-    public Mascota(Long id, List<Foto> fotos, Especie especie, String nombre, String apodo, int edad, String sexo, String descripcion, boolean tieneChapita, HashMap<String, String> caracteristicas, Duenio duenio) {
-        this.id = id;
-        this.fotos = fotos;
-        this.especie = especie;
-        this.nombre = nombre;
-        this.apodo = apodo;
-        this.edad = edad;
-        this.sexo = sexo;
-        this.descripcion = descripcion;
-        this.tieneChapita = tieneChapita;
-        this.caracteristicas = caracteristicas;
-        this.duenio= duenio;
+    public mascotaPerfil(Mascota mascota) {
+        this.id = mascota.getId();
+        this.fotos = mascota.getFotos();
+        this.especie = mascota.getEspecie();
+        this.nombre = mascota.getNombre();
+        this.apodo = mascota.getApodo();
+        this.edad = mascota.getEdad();
+        this.sexo = mascota.getSexo();
+        this.descripcion = mascota.getDescripcion();
+        this.tieneChapita = mascota.isTieneChapita();
     }
 
-    public Long getId() {return id;}
+    public Long getId() {
+        return id;
+    }
 
     public void setId(Long id) {
         this.id = id;
@@ -104,17 +103,4 @@ public class Mascota {
     public void setTieneChapita(boolean tieneChapita) {
         this.tieneChapita = tieneChapita;
     }
-
-    public void serRescatado() {
-        duenio.notificarMascotaEncontrada(this);
-    }
-
-    public Duenio getDuenio() {
-        return duenio;
-    }
-
-    public void setDuenio(Duenio duenio) {
-        this.duenio = duenio;
-    }
 }
-
