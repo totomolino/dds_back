@@ -11,6 +11,7 @@ import com.google.gson.Gson;
 import dominioBD.*;
 
 
+
 import mappers.*;
 import respuestas.*;
 import seguridad.register;
@@ -294,10 +295,56 @@ public class Sistema {
         Spark.get("/iniciarSesionLiviano", Sistema::iniciarSesionLiviano);
         Spark.get("/indexLiviano", Sistema::indexLiviano);
         Spark.get("/damePreguntas/:id", Sistema::damePreguntas);
+        Spark.get("/damePreguntasMasc/:id", Sistema::damePreguntasMasc);
+        Spark.get("/mascotaCarac/:id", Sistema::dameCaracteristicasMasc);
 
 
         //Spark.post("/publicacionPerdida", Sistema::crearPubPerdida);
     }
+
+    private static String dameCaracteristicasMasc(Request req, Response res) {
+
+        String idMasc = req.params("id");
+
+        HashMap<String,String> caracteristicas = BDUtils.dameHashCaracteristicasMasc(Long.parseLong(idMasc));
+
+        res.type("application/json");
+
+        if(caracteristicas.isEmpty()){
+            res.status(400);
+            return new mensaje("No hay preguntas").transformar();
+        }
+
+        res.status(200);
+
+        List<hashmapJSON> caracJSON = new ArrayList<>();
+        caracteristicas.forEach((clave,valor) -> caracJSON.add(new hashmapJSON(clave,valor)));
+
+        //String algo = new Gson().toJson(caracteristicas);
+
+
+        return new Gson().toJson(caracJSON);
+    }
+
+    private static String damePreguntasMasc(Request request, Response res) {
+
+        String idMasc = request.params("id");
+
+        List<pregPublicacionDarEnAdopcion> preguntas = BDUtils.damePreguntasMasc(Integer.parseInt(idMasc));
+
+        res.type("application/json");
+
+        if(preguntas.isEmpty()){
+            res.status(400);
+            return new mensaje("No hay preguntas").transformar();
+        }
+
+        res.status(200);
+
+        return new Gson().toJson(new listaPreguntasMasc(preguntas));
+
+    }
+
 
     private static String damePreguntas(Request request, Response res) {
 

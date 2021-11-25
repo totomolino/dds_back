@@ -4,6 +4,7 @@ import Business.*;
 import Business.publicaciones.PublicacionDarEnAdopcion;
 import Notificar.notificarStrategy;
 import dominioBD.*;
+import mappers.caracMascota;
 
 
 import javax.persistence.*;
@@ -346,4 +347,16 @@ public class BDUtils {
         return preguntas;
 
     }
+
+    public static List<pregPublicacionDarEnAdopcion> damePreguntasMasc(int idMasc) {
+
+        EntityManager em = BDUtils.getEntityManager();
+
+        List<pregPublicacionDarEnAdopcion> preguntas = em.createQuery("from pregPublicacionDarEnAdopcion where preg_publi.pdar_mascota = '" + idMasc + "'").getResultList();
+
+
+        return preguntas;
+    }
+
+
 }
