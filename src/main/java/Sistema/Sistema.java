@@ -282,7 +282,7 @@ public class Sistema {
 //        Spark.post("/rescate", Sistema::encontrarMascota);
         Spark.post("/rescatista", Sistema::crearRescatista);
         Spark.post("/caracAdmin", Sistema::agregarCaracteristicaAdmin);
-        Spark.post("/publicacion/perdida",  Sistema::crearPublicacionPerdida);
+        //Spark.post("/publicacion/perdida",  Sistema::crearPublicacionPerdida);
         Spark.post("/publicacion/adopcion",  Sistema::crearPublicacionAdopcion);
         Spark.post("/publicacion/adopcion/preguntas",  Sistema::agregarPreguntasPubli);
         Spark.post("/publicacion/adoptar",  Sistema::crearPublicacionAdoptar);
