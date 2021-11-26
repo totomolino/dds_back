@@ -1,7 +1,13 @@
 package dominioBD;
 
+import Business.Foto;
+import Business.Mascota;
+import Business.Rescate;
+import Business.Rescatista;
+
 import javax.persistence.*;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Table(name = "rescate_bd")
 @Entity
@@ -80,5 +86,18 @@ public class RescateBD {
 
     public void setFotoRescates(List<FotoRescate> fotoRescates) {
         this.fotoRescates = fotoRescates;
+    }
+
+    public Rescate transformar(){
+        Long id = getResc_id();
+        String descripcion = getResc_descripcionEstado();
+        float lugarX = getResc_lugarEncuentroX();
+        float lugarY = getResc_lugarEncuentroY();
+        Rescatista rescatista = getResc_rescatista().transformar();
+        Mascota mascota = getResc_mascota().transformar();
+        List<Foto> fotos = getFotoRescates().stream().map(fotoRescate -> fotoRescate.transformar()).collect(Collectors.toList());
+        Rescate rescate = new Rescate(Math.toIntExact(id),fotos,descripcion,lugarX,lugarY);
+        return rescate;
+
     }
 }

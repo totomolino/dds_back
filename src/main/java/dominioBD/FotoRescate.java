@@ -1,5 +1,7 @@
 package dominioBD;
 
+import Business.Foto;
+
 import javax.persistence.*;
 
 @Table(name = "foto_rescate")
@@ -40,4 +42,6 @@ public class FotoRescate {
     public void setFore_direccion(String fore_direccion) {
         this.fore_direccion = fore_direccion;
     }
+
+    public Foto transformar() {return new Foto(fore_id,fore_direccion);}
 }

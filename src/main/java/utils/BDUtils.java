@@ -2,6 +2,7 @@ package utils;
 
 import Business.*;
 import Business.publicaciones.PublicacionDarEnAdopcion;
+import Business.publicaciones.PublicacionPerdida;
 import Notificar.notificarStrategy;
 import dominioBD.*;
 import mappers.caracMascota;
@@ -354,5 +355,13 @@ public class BDUtils {
     }
 
 
+    public static List<PublicacionPerdidaBD> damePublicacionesPerdida() {
 
+        EntityManager em = BDUtils.getEntityManager();
+
+        List<PublicacionPerdidaBD> publi = em.createQuery("from PublicacionPerdidaBD ").getResultList();
+
+        return publi;
+
+    }
 }

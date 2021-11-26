@@ -3,6 +3,7 @@ package Sistema;
 import Business.*;
 import Business.publicaciones.Publicacion;
 import Business.publicaciones.PublicacionDarEnAdopcion;
+import Business.publicaciones.PublicacionPerdida;
 import Business.services.apiHogares.apiHogares;
 import Business.services.apiHogares.entities.Hogar;
 import Notificar.notificarStrategy;
@@ -283,6 +284,7 @@ public class Sistema {
         Spark.post("/rescatista", Sistema::crearRescatista);
         Spark.post("/caracAdmin", Sistema::agregarCaracteristicaAdmin);
         Spark.post("/publicacion/perdida",  Sistema::crearPublicacionPerdida);
+        Spark.get("/publicacion/perdida",  Sistema::devolverPublicacionesPerdidas);
         Spark.post("/publicacion/adopcion",  Sistema::crearPublicacionAdopcion);
         Spark.post("/publicacion/adopcion/preguntas",  Sistema::agregarPreguntasPubli);
         Spark.post("/publicacion/adoptar",  Sistema::crearPublicacionAdoptar);
@@ -306,6 +308,24 @@ public class Sistema {
 
 
         //Spark.post("/publicacionPerdida", Sistema::crearPubPerdida);
+    }
+
+    private static String devolverPublicacionesPerdidas(Request req, Response res) {
+
+        res.type("application/json");
+
+        res.status(200);
+
+
+        List<PublicacionPerdidaBD> publicaciones = BDUtils.damePublicacionesPerdida();
+
+        if(publicaciones.isEmpty() || publicaciones == null){
+            res.status(400);
+            return new mensaje("No hay publicaciones").transformar();
+        }
+        List<publiPerdida> lista = publicaciones.stream().map(dea ->new publiPerdida(dea.getPper_rescate().getResc_descripcionEstado(), dea.getPubl_estado(),dea.getPper_rescate().getResc_lugarEncuentroX(),dea.getPper_rescate().getResc_lugarEncuentroY(),dea.getPper_rescate().getResc_rescatista())).collect(Collectors.toList());
+        return new Gson().toJson(lista);
+
     }
 
     private static String notificarDuenioRescate(Request req, Response res) {
@@ -552,17 +572,11 @@ public class Sistema {
 
     private static String devolverPublicacionesDarAdopcion(Request req, Response res) {
 
-       // String personaID =  req.params(":id");
 
         res.type("application/json");
 
         res.status(200);
 
-        //MascotaBD mascota = BDUtils.buscarMascota(Integer.parseInt(personaID));
-
-        //Adoptante adoptante = BDUtils.buscarAdoptante(Long.parseLong(personaID));
-
-        //List<PublicacionDarEnAdopcion> publicaciones = publicacionesAptasParaAdoptar(adoptante);
 
         List<PublicacionDarEnAdopcion> publicaciones = BDUtils.damePublicacionesAdopcion();
 
