@@ -282,7 +282,7 @@ public class Sistema {
 //        Spark.post("/rescate", Sistema::encontrarMascota);
         Spark.post("/rescatista", Sistema::crearRescatista);
         Spark.post("/caracAdmin", Sistema::agregarCaracteristicaAdmin);
-        //Spark.post("/publicacion/perdida",  Sistema::crearPublicacionPerdida);
+        Spark.post("/publicacion/perdida",  Sistema::crearPublicacionPerdida);
         Spark.post("/publicacion/adopcion",  Sistema::crearPublicacionAdopcion);
         Spark.post("/publicacion/adopcion/preguntas",  Sistema::agregarPreguntasPubli);
         Spark.post("/publicacion/adoptar",  Sistema::crearPublicacionAdoptar);
@@ -301,10 +301,20 @@ public class Sistema {
         Spark.post("/mascota/adoptar", Sistema::adoptarMascota);
         Spark.post("/rescate", Sistema::crearRescate);
         Spark.post("/rescate/fotos", Sistema::agregarFotosRescate);
+        Spark.post("/rescate/duenio", Sistema::notificarDuenioRescate);
 
 
 
         //Spark.post("/publicacionPerdida", Sistema::crearPubPerdida);
+    }
+
+    private static String notificarDuenioRescate(Request req, Response res) {
+
+        duenioMascota algo = new Gson().fromJson(req.body(), duenioMascota.class);
+        MascotaBD mascotaBD = BDUtils.buscarMascota(Integer.parseInt(algo.getMascota()));
+        mascotaBD.getMasc_duenio().transformar().notificarMascotaEncontrada(mascotaBD.transformar());
+
+        return new mensaje("Se notifico al duenio").transformar();
     }
 
     private static String agregarFotosRescate(Request req, Response res) {
@@ -325,18 +335,6 @@ public class Sistema {
         RescateBD rescate = new Gson().fromJson(req.body(), RescateBD.class);
 
         BDUtils.agregarObjeto(rescate);
-
-        if(rescate.getResc_mascota().getMasc_id() == -1){
-            //crear publi
-            crearPublicacionPerdida(rescate);
-        }
-        else{
-            //notificar duenio
-            MascotaBD mascota = rescate.getResc_mascota();
-            mascota.getMasc_duenio().transformar().notificarMascotaEncontrada(mascota.transformar());
-        }
-
-
 
         res.type("application/json");
         res.status(200);
@@ -812,13 +810,13 @@ public class Sistema {
         return (new mensaje("Se agregaron las preguntas correctamente").transformar());
     }
 
-    private static void crearPublicacionPerdida(RescateBD rescate) {
+    private static String crearPublicacionPerdida(Request req, Response res) {
 
-        PublicacionPerdidaBD publicacion = new PublicacionPerdidaBD();
-
-        publicacion.setPper_rescate(rescate);
+        PublicacionPerdidaBD publicacion = new Gson().fromJson(req.body(), PublicacionPerdidaBD.class);
 
         BDUtils.agregarObjeto(publicacion);
+
+        return new mensaje("Se creo la publicacion!").transformar();
 
 
     }
