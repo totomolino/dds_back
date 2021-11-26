@@ -298,10 +298,26 @@ public class Sistema {
         Spark.get("/damePreguntasMasc/:id", Sistema::damePreguntasMasc);
         Spark.get("/mascotaCarac/:id", Sistema::dameCaracteristicasMasc);
         Spark.get("/mascota/:id", Sistema::dameMascota);
+        Spark.post("/mascota/adoptar", Sistema::adoptarMascota);
 
 
 
         //Spark.post("/publicacionPerdida", Sistema::crearPubPerdida);
+    }
+
+    private static String adoptarMascota(Request req, Response res) {
+
+        adoptarMascota adopcion = new Gson().fromJson(req.body(), adoptarMascota.class);
+
+        MascotaBD mascota = BDUtils.buscarMascota(adopcion.getMascota());
+
+        Duenio duenio = BDUtils.dameDuenio(mascota.getMasc_duenio().getPers_id()).transformar();
+
+        AdoptanteBD adoptante = (AdoptanteBD) BDUtils.dameIdPersona(Long.valueOf(adopcion.getAdoptante()));
+
+        duenio.serNotificadoAdopcion(adoptante.transformar());
+
+        return new mensaje("Se notifico al duenio").transformar();
     }
 
     private static String dameMascota(Request req, Response res) {

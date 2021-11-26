@@ -1,8 +1,6 @@
 package Notificar;
 
-import Business.Adoptante;
 import Business.Mascota;
-import Business.Persona;
 
 public class WHATSAPP extends notificarStrategy{
 
@@ -15,8 +13,8 @@ public class WHATSAPP extends notificarStrategy{
     }
 
     @Override
-    public void notificarAdopcion(String email, String telefono, Adoptante adoptante) {
-        twilio.mandarWhatsapp(telefono, "Encontramos un interesado llamado "+ adoptante.getNombre());
+    public void notificarAdopcion(String email, String telefono, String mensaje) {
+        twilio.mandarWhatsapp(telefono, mensaje);
     }
 }
 

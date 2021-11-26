@@ -30,7 +30,7 @@ public class Duenio extends Persona {
 
     public void serNotificadoAdopcion(Adoptante adoptante) {
         for(int i = 0 ; i < formaNotificacion.size() ; i++) {
-            formaNotificacion.get(i).notificarAdopcion(usuario.email, telefono, adoptante);
+            formaNotificacion.get(i).notificarAdopcion(usuario.email, telefono, "Encontramos un interesado llamado "+ adoptante.getNombre() + " " + adoptante.getApellido() + " numero de telefono: " + adoptante.getTelefono());
         }
 
         for (Contacto c : contactos ) {

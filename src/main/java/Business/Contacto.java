@@ -35,7 +35,7 @@ public class Contacto {
 
         for(int i = 0 ; i < formaNotificacion.size() ; i++){
 
-            formaNotificacion.get(i).notificarAdopcion(email, telefono, adoptante);
+            formaNotificacion.get(i).notificarAdopcion(email, telefono, "Encontramos un interesado llamado "+ adoptante.getNombre() + " " + adoptante.getApellido() + " numero de telefono: " + adoptante.getTelefono());
 
         }
     }

@@ -1,8 +1,6 @@
 package Notificar;
 
-import Business.Adoptante;
 import Business.Mascota;
-import Business.Persona;
 
 public class SMS extends notificarStrategy{
 
@@ -13,8 +11,8 @@ public class SMS extends notificarStrategy{
     }
 
     @Override
-    public void notificarAdopcion(String email, String telefono, Adoptante adoptante) {
-        twilio.mandarSMS(telefono, "Encontramos un interesado llamado "+ adoptante.getNombre());
+    public void notificarAdopcion(String email, String telefono, String mensaje) {
+        twilio.mandarSMS(telefono, mensaje);
     }
 
 }
