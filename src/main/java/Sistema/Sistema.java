@@ -323,7 +323,7 @@ public class Sistema {
             res.status(400);
             return new mensaje("No hay publicaciones").transformar();
         }
-        List<publiPerdida> lista = publicaciones.stream().map(dea ->new publiPerdida(dea.getPper_rescate().getResc_descripcionEstado(), dea.getPubl_estado(),dea.getPper_rescate().getResc_lugarEncuentroX(),dea.getPper_rescate().getResc_lugarEncuentroY(),dea.getPper_rescate().getResc_rescatista())).collect(Collectors.toList());
+        List<publiPerdida> lista = publicaciones.stream().map(dea ->new publiPerdida(dea.getPper_rescate().getResc_descripcionEstado(), dea.getPubl_estado(),dea.getPper_rescate().getResc_lugarEncuentroX(),dea.getPper_rescate().getResc_lugarEncuentroY(),dea.getPper_rescate().getResc_rescatista(), dea.getPper_rescate().getFotoRescates().stream().map(fotoRescate -> fotoRescate.transformar()).collect(Collectors.toList()))).collect(Collectors.toList());
         return new Gson().toJson(lista);
 
     }

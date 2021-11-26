@@ -1,7 +1,10 @@
 package mappers;
 
+import Business.Foto;
 import Business.Rescatista;
 import dominioBD.RescatistaBD;
+
+import java.util.List;
 
 
 public class publiPerdida {
@@ -11,13 +14,16 @@ public class publiPerdida {
      float resc_lugarEncuentroX;
      float resc_lugarEncuentroY;
      Rescatista resc_rescatista;
+     List<Foto> fotos;
 
-    public publiPerdida(String resc_descripcion, String estado, float resc_lugarEncuentroX, float resc_lugarEncuentroY, RescatistaBD resc_rescatista) {
+
+    public publiPerdida(String resc_descripcion, String estado, float resc_lugarEncuentroX, float resc_lugarEncuentroY, RescatistaBD resc_rescatista, List<Foto> fotos) {
         this.resc_descripcion = resc_descripcion;
         this.estado = estado;
         this.resc_lugarEncuentroX = resc_lugarEncuentroX;
         this.resc_lugarEncuentroY = resc_lugarEncuentroY;
         this.resc_rescatista = resc_rescatista.transformar();
+        this.fotos = fotos;
     }
 
     public String getResc_descripcion() {

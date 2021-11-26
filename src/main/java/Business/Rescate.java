@@ -26,4 +26,7 @@ public class Rescate {
         return lugarEncuentroY;
     }
 
+    public List<Foto> getFotos() {
+        return listaDeFotos;
+    }
 }
