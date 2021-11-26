@@ -299,10 +299,50 @@ public class Sistema {
         Spark.get("/mascotaCarac/:id", Sistema::dameCaracteristicasMasc);
         Spark.get("/mascota/:id", Sistema::dameMascota);
         Spark.post("/mascota/adoptar", Sistema::adoptarMascota);
+        Spark.post("/rescate", Sistema::crearRescate);
+        Spark.post("/rescate/fotos", Sistema::agregarFotosRescate);
 
 
 
         //Spark.post("/publicacionPerdida", Sistema::crearPubPerdida);
+    }
+
+    private static String agregarFotosRescate(Request req, Response res) {
+
+        fotosRescate fotos = new Gson().fromJson(req.body(), fotosRescate.class);
+
+
+        fotos.getFotos().forEach(foto -> BDUtils.agregarObjeto(foto));
+
+        res.type("application/json");
+        res.status(200);
+
+        return new mensaje("Se agregaron las fotos").transformar();
+    }
+
+    private static String crearRescate(Request req, Response res) {
+
+        RescateBD rescate = new Gson().fromJson(req.body(), RescateBD.class);
+
+        BDUtils.agregarObjeto(rescate);
+
+        if(rescate.getResc_mascota().getMasc_id() == -1){
+            //crear publi
+        }
+        else{
+            //notificar duenio
+
+        }
+
+
+
+        res.type("application/json");
+        res.status(200);
+
+        String idResc = "{\"rescate\": "+ rescate.getResc_id() + "}";
+
+        return idResc;
+
     }
 
     private static String adoptarMascota(Request req, Response res) {
@@ -316,6 +356,9 @@ public class Sistema {
         AdoptanteBD adoptante = (AdoptanteBD) BDUtils.dameIdPersona(Long.valueOf(adopcion.getAdoptante()));
 
         duenio.serNotificadoAdopcion(adoptante.transformar());
+
+        res.type("application/json");
+        res.status(200);
 
         return new mensaje("Se notifico al duenio").transformar();
     }
@@ -332,6 +375,8 @@ public class Sistema {
         List<hashmapJSON> caracJSON = new ArrayList<>();
         caracteristicas.forEach((clave,valor) -> caracJSON.add(new hashmapJSON(clave,valor)));
 
+        res.type("application/json");
+        res.status(200);
 
         return new Gson().toJson(new superMascota(mascota,preguntas,caracJSON));
     }
