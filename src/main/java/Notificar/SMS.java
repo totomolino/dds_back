@@ -7,17 +7,17 @@ public class SMS extends notificarStrategy{
 
     @Override
     public void notificarMascotaEncontrada(String email, String telefono, Mascota mascota) {
-        twilio.mandarSMS(telefono, "Encontramos a tu mascota "+ mascota.getApodo());
+        twilio.mandarSMS("+54"+telefono, "Encontramos a tu mascota "+ mascota.getApodo());
     }
 
     @Override
     public void notificarAdopcion(String email, String telefono, String mensaje) {
-        twilio.mandarSMS(telefono, mensaje);
+        twilio.mandarSMS("+54"+telefono, mensaje);
     }
 
     @Override
     public void notificarEncuentro(String email, String telefono, String mensaje) {
-        twilio.mandarSMS(telefono,mensaje);
+        twilio.mandarSMS("+54"+telefono,mensaje);
     }
 
 }

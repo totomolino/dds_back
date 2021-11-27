@@ -21,9 +21,7 @@ public class Adoptante extends Persona{
         this.preferencias = preferencias;
     }
 
-    public void quieroAdoptar(PublicacionDarEnAdopcion unaPubl) {
-        (unaPubl.duenio).serNotificadoAdopcion(this);
-    }
+
 
     public List<PublicacionDarEnAdopcion> meSirvenLasPublicaciones(List<PublicacionDarEnAdopcion> publicacionesDarAdopcion) {
         List<PublicacionDarEnAdopcion> publicacionesQueMeSirven = publicacionesDarAdopcion.stream().filter(publicacion -> this.meSSirve(publicacion)).collect(Collectors.toList());

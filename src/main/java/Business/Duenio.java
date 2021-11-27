@@ -28,13 +28,13 @@ public class Duenio extends Persona {
         return usuario.nombre.equals(unUsuario);
     }
 
-    public void serNotificadoAdopcion(Adoptante adoptante) {
+    public void serNotificadoAdopcion(String nombre, String apellido, String telefono) {
         for(int i = 0 ; i < formaNotificacion.size() ; i++) {
-            formaNotificacion.get(i).notificarAdopcion(usuario.email, telefono, "Encontramos un interesado llamado "+ adoptante.getNombre() + " " + adoptante.getApellido() + " numero de telefono: " + adoptante.getTelefono());
+            formaNotificacion.get(i).notificarAdopcion(usuario.email, telefono, "Encontramos un interesado llamado "+ nombre + " " + apellido + " numero de telefono: " + telefono);
         }
 
         for (Contacto c : contactos ) {
-            c.notificarAdopcion(adoptante);
+            c.notificarAdopcion(nombre, apellido,telefono);
         }
 
     }

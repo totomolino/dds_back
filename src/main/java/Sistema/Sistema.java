@@ -422,9 +422,9 @@ public class Sistema {
 
         Duenio duenio = BDUtils.dameDuenio(mascota.getMasc_duenio().getPers_id()).transformar();
 
-        AdoptanteBD adoptante = (AdoptanteBD) BDUtils.dameIdPersona(Long.valueOf(adopcion.getAdoptante()));
+        PersonaBD persone = BDUtils.dameIdPersona(Long.valueOf(adopcion.getAdoptante()));
 
-        duenio.serNotificadoAdopcion(adoptante.transformar());
+        duenio.serNotificadoAdopcion(persone.getPers_nombre(), persone.getPers_apellido(), persone.getPers_telefono());
 
         res.type("application/json");
         res.status(200);

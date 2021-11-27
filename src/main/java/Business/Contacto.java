@@ -31,11 +31,11 @@ public class Contacto {
         }
     }
 
-    public void notificarAdopcion(Adoptante adoptante){
+    public void notificarAdopcion(String nombre, String apellido, String telefono){
 
         for(int i = 0 ; i < formaNotificacion.size() ; i++){
 
-            formaNotificacion.get(i).notificarAdopcion(email, telefono, "Encontramos un interesado llamado "+ adoptante.getNombre() + " " + adoptante.getApellido() + " numero de telefono: " + adoptante.getTelefono());
+            formaNotificacion.get(i).notificarAdopcion(email, telefono, "Encontramos un interesado llamado "+ nombre + " " + apellido + " numero de telefono: " + telefono);
 
         }
     }
