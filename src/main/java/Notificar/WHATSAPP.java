@@ -16,6 +16,11 @@ public class WHATSAPP extends notificarStrategy{
     public void notificarAdopcion(String email, String telefono, String mensaje) {
         twilio.mandarWhatsapp(telefono, mensaje);
     }
+
+    @Override
+    public void notificarEncuentro(String email, String telefono, String mensaje) {
+        twilio.mandarWhatsapp(telefono,mensaje);
+    }
 }
 
 

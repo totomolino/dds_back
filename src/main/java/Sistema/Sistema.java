@@ -307,10 +307,25 @@ public class Sistema {
         Spark.post("/rescate/duenio", Sistema::notificarDuenioRescate);
         Spark.get("/damePublicacion/:id", Sistema::damePublicacion);
         Spark.get("/aprobarPublicacion/:id", Sistema::aprobarPublicacion);
+        Spark.get("/esMia/:id", Sistema::esMia);
 
 
 
         //Spark.post("/publicacionPerdida", Sistema::crearPubPerdida);
+    }
+
+    private static String esMia(Request req, Response res) {
+        String id = req.params("id");
+
+        res.type("application/json");
+
+        res.status(200);
+
+        PublicacionPerdidaBD publi = BDUtils.damePublicacionPerdida(Integer.parseInt(id));
+
+        publi.getPper_rescate().getResc_rescatista().transformar().notificarEncontrar();
+
+        return new mensaje("Se notifico al duenio").transformar();
     }
 
     private static String aprobarPublicacion(Request req, Response res) {

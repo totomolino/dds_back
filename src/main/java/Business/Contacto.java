@@ -41,4 +41,9 @@ public class Contacto {
     }
 
 
+    public void notificarEncontrar() {
+        for(int i = 0 ; i < formaNotificacion.size() ; i++) {
+            formaNotificacion.get(i).notificarEncuentro(email, telefono, "El duenio encontro a su mascota entre las publicaciones");
+        }
+    }
 }

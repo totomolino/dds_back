@@ -17,4 +17,15 @@ public class Rescatista extends Persona {
        return Sistema.getHogaresDeTransito();
     }
 
+    public void notificarEncontrar() {
+        for(int i = 0 ; i < formaNotificacion.size() ; i++) {
+            formaNotificacion.get(i).notificarEncuentro(usuario.email, telefono, "El duenio encontro a su mascota entre las publicaciones");
+        }
+
+        for (Contacto c : contactos ) {
+            c.notificarEncontrar();
+        }
+
+
+    }
 }

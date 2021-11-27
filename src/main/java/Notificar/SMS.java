@@ -15,4 +15,9 @@ public class SMS extends notificarStrategy{
         twilio.mandarSMS(telefono, mensaje);
     }
 
+    @Override
+    public void notificarEncuentro(String email, String telefono, String mensaje) {
+        twilio.mandarSMS(telefono,mensaje);
+    }
+
 }

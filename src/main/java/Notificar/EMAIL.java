@@ -14,5 +14,10 @@ public class EMAIL extends notificarStrategy{
         twilio.mandarEmail(email, mensaje);
     }
 
+    @Override
+    public void notificarEncuentro(String email, String telefono, String mensaje) {
+        twilio.mandarEmail(email,mensaje);
+    }
+
 
 }

@@ -8,4 +8,5 @@ public abstract class notificarStrategy {
 
     public abstract void notificarAdopcion(String email, String telefono, String mensaje);
 
+    public abstract void notificarEncuentro(String email, String telefono, String mensaje);
 }
