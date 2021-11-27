@@ -9,6 +9,7 @@ import java.util.List;
 
 public class publiPerdida {
 
+     Long id;
      String resc_descripcion;
      String estado;
      float resc_lugarEncuentroX;
@@ -17,13 +18,22 @@ public class publiPerdida {
      List<Foto> fotos;
 
 
-    public publiPerdida(String resc_descripcion, String estado, float resc_lugarEncuentroX, float resc_lugarEncuentroY, RescatistaBD resc_rescatista, List<Foto> fotos) {
+    public publiPerdida(Long id, String resc_descripcion, String estado, float resc_lugarEncuentroX, float resc_lugarEncuentroY, RescatistaBD resc_rescatista, List<Foto> fotos) {
+        this.id = id;
         this.resc_descripcion = resc_descripcion;
         this.estado = estado;
         this.resc_lugarEncuentroX = resc_lugarEncuentroX;
         this.resc_lugarEncuentroY = resc_lugarEncuentroY;
         this.resc_rescatista = resc_rescatista.transformar();
         this.fotos = fotos;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getResc_descripcion() {

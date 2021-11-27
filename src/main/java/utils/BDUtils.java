@@ -308,13 +308,16 @@ public class BDUtils {
 
         EntityManager em = BDUtils.getEntityManager();
 
-        PersonaBD persona = (PersonaBD) em.createQuery("from PersonaBD where pers_usuario = '" + id + "'").getResultList().get(0);
+        List<PersonaBD> persona = em.createQuery("from PersonaBD where pers_usuario = '" + id + "'").getResultList();
 
         BDUtils.commit(em);
 
         em.close();
 
-        return persona;
+        if(persona.isEmpty()){
+            return null;
+        }
+        else return persona.get(0);
 
     }
 
@@ -362,6 +365,25 @@ public class BDUtils {
         List<PublicacionPerdidaBD> publi = em.createQuery("from PublicacionPerdidaBD ").getResultList();
 
         return publi;
+
+    }
+
+    public static PublicacionPerdidaBD damePublicacionPerdida(int id) {
+        EntityManager em = BDUtils.getEntityManager();
+
+        PublicacionPerdidaBD publi = em.find(PublicacionPerdidaBD.class, (Integer.toUnsignedLong(id)));
+
+        return publi;
+    }
+
+    public static void aprobarPublicacion(int id) {
+        EntityManager em = BDUtils.getEntityManager();
+
+        em.getTransaction().begin();
+
+        em.createQuery("update PublicacionPerdidaBD set publ_estado = 'APROBADA' where publ_id = '" + id + "'").executeUpdate();
+
+        em.getTransaction().commit();
 
     }
 }

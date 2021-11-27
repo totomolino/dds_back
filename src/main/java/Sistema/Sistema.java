@@ -6,6 +6,7 @@ import Business.publicaciones.PublicacionDarEnAdopcion;
 import Business.publicaciones.PublicacionPerdida;
 import Business.services.apiHogares.apiHogares;
 import Business.services.apiHogares.entities.Hogar;
+import Business.services.apiHogares.entities.Mensaje;
 import Notificar.notificarStrategy;
 import com.google.gson.Gson;
 
@@ -304,10 +305,43 @@ public class Sistema {
         Spark.post("/rescate", Sistema::crearRescate);
         Spark.post("/rescate/fotos", Sistema::agregarFotosRescate);
         Spark.post("/rescate/duenio", Sistema::notificarDuenioRescate);
+        Spark.get("/damePublicacion/:id", Sistema::damePublicacion);
+        Spark.get("/aprobarPublicacion/:id", Sistema::aprobarPublicacion);
 
 
 
         //Spark.post("/publicacionPerdida", Sistema::crearPubPerdida);
+    }
+
+    private static String aprobarPublicacion(Request req, Response res) {
+        String id = req.params("id");
+
+        res.type("application/json");
+
+        res.status(200);
+
+        BDUtils.aprobarPublicacion(Integer.parseInt(id));
+
+        return new mensaje("se aprobo la publi").transformar();
+    }
+
+    private static String damePublicacion(Request req, Response res) {
+
+        String id = req.params("id");
+
+        res.type("application/json");
+
+        res.status(200);
+
+
+        PublicacionPerdidaBD dea = BDUtils.damePublicacionPerdida( Integer.parseInt(id));
+
+        if(dea == null){
+            res.status(400);
+            return new mensaje("No hay publicaciones").transformar();
+        }
+        publiPerdida publi = new publiPerdida(dea.getPubl_id(),dea.getPper_rescate().getResc_descripcionEstado(), dea.getPubl_estado(),dea.getPper_rescate().getResc_lugarEncuentroX(),dea.getPper_rescate().getResc_lugarEncuentroY(),dea.getPper_rescate().getResc_rescatista(), dea.getPper_rescate().getFotoRescates().stream().map(fotoRescate -> fotoRescate.transformar()).collect(Collectors.toList()));
+        return new Gson().toJson(publi);
     }
 
     private static String devolverPublicacionesPerdidas(Request req, Response res) {
@@ -323,7 +357,7 @@ public class Sistema {
             res.status(400);
             return new mensaje("No hay publicaciones").transformar();
         }
-        List<publiPerdida> lista = publicaciones.stream().map(dea ->new publiPerdida(dea.getPper_rescate().getResc_descripcionEstado(), dea.getPubl_estado(),dea.getPper_rescate().getResc_lugarEncuentroX(),dea.getPper_rescate().getResc_lugarEncuentroY(),dea.getPper_rescate().getResc_rescatista(), dea.getPper_rescate().getFotoRescates().stream().map(fotoRescate -> fotoRescate.transformar()).collect(Collectors.toList()))).collect(Collectors.toList());
+        List<publiPerdida> lista = publicaciones.stream().map(dea ->new publiPerdida(dea.getPubl_id(),dea.getPper_rescate().getResc_descripcionEstado(), dea.getPubl_estado(),dea.getPper_rescate().getResc_lugarEncuentroX(),dea.getPper_rescate().getResc_lugarEncuentroY(),dea.getPper_rescate().getResc_rescatista(), dea.getPper_rescate().getFotoRescates().stream().map(fotoRescate -> fotoRescate.transformar()).collect(Collectors.toList()))).collect(Collectors.toList());
         return new Gson().toJson(lista);
 
     }
@@ -559,14 +593,20 @@ public class Sistema {
 
         PersonaBD persona = BDUtils.dameIdPersona(usuario.getId());
 
-        if(usuario == null || persona == null){
+        if(usuario == null ){
             res.status(400);
             return new mensaje("No se valido el usuario").transformar();
         }
+        Long persId;
+        if(persona == null){
+            persId = -1L;
+        }
+         else persId = persona.getPers_id();
+
 
         res.status(200);
 
-        return new Gson().toJson(new userName(usuario.getNombre(), persona.getPers_id()));
+        return new Gson().toJson(new userName(usuario.getNombre(), persId));
 
     }
 
@@ -639,15 +679,35 @@ public class Sistema {
 
     public static String crearDuenio(Request req, Response res){
 
-        DuenioBD duenio = new Gson().fromJson(req.body(), DuenioBD.class);
+        PersonaBD persona = new Gson().fromJson(req.body(), DuenioBD.class);
+
+        String tipo = persona.getPers_usuario().getUsu_tipo();
 
         res.type("application/json");
 
-        BDUtils.agregarObjeto(duenio);
-
         res.status(200);
 
-        return new Gson().toJson(duenio);
+        if(tipo.equalsIgnoreCase("ADOPTANTE")){
+            AdoptanteBD adoptante = (AdoptanteBD) persona;
+
+            BDUtils.agregarObjeto(adoptante);
+
+            return new Gson().toJson(adoptante);
+
+        }
+        else if(tipo.equalsIgnoreCase("RESCATISTA")){
+            RescatistaBD rescatistaBD = (RescatistaBD) persona;
+
+            BDUtils.agregarObjeto(rescatistaBD);
+
+            return new Gson().toJson(rescatistaBD);
+        }else {
+            DuenioBD duenio = (DuenioBD) persona;
+
+            BDUtils.agregarObjeto(duenio);
+
+            return new Gson().toJson(duenio);
+        }
     }
 
     public static String crearOrganizacion(Request req, Response res){
