@@ -386,4 +386,15 @@ public class BDUtils {
         em.getTransaction().commit();
 
     }
+
+    public static List<Adoptante> dameAdoptantes() {
+
+        EntityManager em = BDUtils.getEntityManager();
+
+        List<AdoptanteBD> adoptantesBDs = em.createQuery("from AdoptanteBD ").getResultList();
+
+
+        return adoptantesBDs.stream().map(adop -> adop.transformar()).collect(Collectors.toList());
+
+    }
 }

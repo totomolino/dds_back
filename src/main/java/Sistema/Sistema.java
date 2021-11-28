@@ -259,6 +259,7 @@ public class Sistema {
     }
 
     public void recomendarAdoptar(){
+        List<Adoptante> adoptantes = BDUtils.dameAdoptantes();
         adoptantes.forEach(adoptante -> this.recomendarAdoptante(adoptante));
     }
 
@@ -308,10 +309,25 @@ public class Sistema {
         Spark.get("/damePublicacion/:id", Sistema::damePublicacion);
         Spark.get("/aprobarPublicacion/:id", Sistema::aprobarPublicacion);
         Spark.get("/esMia/:id", Sistema::esMia);
+        Spark.get("/publicacionesRecomendadas/:id", Sistema::recomendaciones);
 
 
 
         //Spark.post("/publicacionPerdida", Sistema::crearPubPerdida);
+    }
+
+    private static String recomendaciones(Request req, Response res) {
+        String id = req.params("id");
+
+        res.type("application/json");
+
+        res.status(200);
+
+        Adoptante adoptante = BDUtils.buscarAdoptante(Long.parseLong(id));
+
+        List<PublicacionDarEnAdopcion> publicaciones = Sistema.publicacionesAptasParaAdoptar(adoptante);
+
+        return new Gson().toJson(publicaciones);
     }
 
     private static String esMia(Request req, Response res) {
