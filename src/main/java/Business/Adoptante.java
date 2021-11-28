@@ -57,8 +57,10 @@ public class Adoptante extends Persona{
         }
     }
 
-    public void recomendarAdopcion(List<PublicacionDarEnAdopcion> publicaciones) {
-        //TODO MANDAR MAIL O MOSTRAR EN LA PAGINA??
+    public void recomendarAdopcion() {
+        for(notificarStrategy c : formaNotificacion){
+            c.notificarEncuentro(usuario.email,telefono,"Recomendacion semanal de mascotas para adoptar: https://patitasfront.herokuapp.com/html/recomendaciones.html?id=" + id);
+        }
     }
 }
 

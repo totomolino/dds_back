@@ -260,13 +260,10 @@ public class Sistema {
 
     public void recomendarAdoptar(){
         List<Adoptante> adoptantes = BDUtils.dameAdoptantes();
-        adoptantes.forEach(adoptante -> this.recomendarAdoptante(adoptante));
+        adoptantes.forEach(adoptante -> adoptante.recomendarAdopcion());
     }
 
-    private void recomendarAdoptante(Adoptante adoptante) {
-        List<PublicacionDarEnAdopcion> publicaciones = this.publicacionesAptasParaAdoptar(adoptante);
-        adoptante.recomendarAdopcion(publicaciones);
-    }
+
 
     //FUNCIONES PRINCIPALES
     // TODO ACA ESTAN LOS SPARKS!!! :) <3 (LOS IRON MANS)
