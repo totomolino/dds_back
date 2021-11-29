@@ -307,10 +307,67 @@ public class Sistema {
         Spark.get("/aprobarPublicacion/:id", Sistema::aprobarPublicacion);
         Spark.get("/esMia/:id", Sistema::esMia);
         Spark.get("/publicacionesRecomendadas/:id", Sistema::recomendaciones);
+        Spark.post("/adoptante/:id" , Sistema::crearAdoptante);
+        Spark.post("/adoptante/comodidades" , Sistema::agregarComodidades);
+        Spark.post("/adoptante/preferencias" , Sistema::agregarPreferencias);
 
 
 
         //Spark.post("/publicacionPerdida", Sistema::crearPubPerdida);
+    }
+
+    private static String agregarPreferencias(Request req, Response res) {
+
+        preferencias preferencias = new Gson().fromJson(req.body(), preferencias.class);
+
+        res.type("application/json");
+
+        res.status(200);
+
+        preferencias.getPreferencias().forEach(a -> BDUtils.agregarObjeto(a));
+
+        return new mensaje("Se guardaron las preferencias").transformar();
+    }
+
+    private static String agregarComodidades(Request req, Response res) {
+
+        comodidades como = new Gson().fromJson(req.body(), comodidades.class);
+
+        res.type("application/json");
+
+        res.status(200);
+
+        como.getComodidades().forEach(a -> BDUtils.agregarObjeto(a));
+
+        return new mensaje("Se guardaron las comodidades").transformar();
+    }
+
+    private static String crearAdoptante(Request req, Response res) {
+        String id = req.params("id");
+
+        res.type("application/json");
+
+        res.status(200);
+
+        PersonaBD persona = BDUtils.dameIdPersona(Long.parseLong(id));
+
+        AdoptanteBD adoptante = new AdoptanteBD();
+
+        adoptante.setFormaNotifPers(persona.getFormaNotifPers());
+        adoptante.setContactoBDS(persona.getContactoBDS());
+        adoptante.setPers_nombre(persona.getPers_nombre());
+        adoptante.setPers_apellido(persona.getPers_apellido());
+        adoptante.setPers_documento(persona.getPers_documento());
+        adoptante.setPers_tipoDocumento(persona.getPers_tipoDocumento());
+        adoptante.setPers_fechaNacimiento(persona.getPers_fechaNacimiento());
+        adoptante.setPers_telefono(persona.getPers_telefono());
+        adoptante.setPers_usuario(persona.getPers_usuario());
+
+        BDUtils.agregarObjeto(adoptante);
+
+        String respuesta = "{\"id\"=" + adoptante.getPers_id() + "}";
+
+        return respuesta;
     }
 
     private static String recomendaciones(Request req, Response res) {
