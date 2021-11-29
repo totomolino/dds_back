@@ -21,6 +21,7 @@ function login(){
         return Response.json();
     })
     .then(datos => {
+        error(status, datos.mensaje);
         localStorage.setItem("IDSESION", datos.idSesion);
         localStorage.setItem("TIPO", datos.tipo);
         document.getElementById("anchorID").click();
@@ -31,3 +32,9 @@ function nombre(){
     document.getElementById('anchorID').href =  `./indexLiviano?id=${localStorage.getItem('IDSESION')}`;
 }
 
+function error(status, mensaje){
+    if(status == 400 || status == 500){
+        alert(mensaje)
+        return;
+    }
+}
