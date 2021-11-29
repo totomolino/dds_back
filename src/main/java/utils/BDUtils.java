@@ -397,4 +397,15 @@ public class BDUtils {
         return adoptantesBDs.stream().map(adop -> adop.transformar()).collect(Collectors.toList());
 
     }
+
+    public static UsuarioBD getUser(Long usu_id) {
+
+        EntityManager em = BDUtils.getEntityManager();
+
+        UsuarioBD usuario = em.find(UsuarioBD.class, usu_id);
+
+        return usuario;
+
+
+    }
 }

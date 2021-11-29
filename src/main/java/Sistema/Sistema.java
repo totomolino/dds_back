@@ -768,7 +768,9 @@ public class Sistema {
 
         PersonaBD persona = new Gson().fromJson(req.body(), DuenioBD.class);
 
-        String tipo = persona.getPers_usuario().getUsu_tipo();
+        UsuarioBD usuario = BDUtils.getUser(persona.getPers_usuario().getUsu_id());
+
+        String tipo = usuario.getUsu_tipo();
 
         res.type("application/json");
 
