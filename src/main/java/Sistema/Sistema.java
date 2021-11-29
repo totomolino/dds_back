@@ -307,7 +307,7 @@ public class Sistema {
         Spark.get("/aprobarPublicacion/:id", Sistema::aprobarPublicacion);
         Spark.get("/esMia/:id", Sistema::esMia);
         Spark.get("/publicacionesRecomendadas/:id", Sistema::recomendaciones);
-        Spark.post("/adoptante/:id" , Sistema::crearAdoptante);
+        Spark.post("/adoptante/crear/:id" , Sistema::crearAdoptante);
         Spark.post("/adoptante/comodidades" , Sistema::agregarComodidades);
         Spark.post("/adoptante/preferencias" , Sistema::agregarPreferencias);
 
@@ -324,6 +324,9 @@ public class Sistema {
 
         res.status(200);
 
+
+
+        preferencias.getPreferencias().forEach(pref -> BDUtils.agregarObjeto(pref.getPrefXado_pref()));
         preferencias.getPreferencias().forEach(a -> BDUtils.agregarObjeto(a));
 
         return new mensaje("Se guardaron las preferencias").transformar();
@@ -337,6 +340,7 @@ public class Sistema {
 
         res.status(200);
 
+        como.getComodidades().forEach(com -> BDUtils.agregarObjeto(com.getComoXad_como()));
         como.getComodidades().forEach(a -> BDUtils.agregarObjeto(a));
 
         return new mensaje("Se guardaron las comodidades").transformar();
@@ -365,9 +369,7 @@ public class Sistema {
 
         BDUtils.agregarObjeto(adoptante);
 
-        String respuesta = "{\"id\"=" + adoptante.getPers_id() + "}";
-
-        return respuesta;
+        return new Gson().toJson(adoptante.transformar());
     }
 
     private static String recomendaciones(Request req, Response res) {
