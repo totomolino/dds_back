@@ -10,8 +10,8 @@ function login(){
         alert("Debes ingresar los campos")
         return;
     }
-    fetch("http://localhost:4567/patitas/iniciarSesion", {
-    //fetch("https://patitasback.herokuapp.com/patitas/iniciarSesion", {
+    // fetch("http://localhost:4567/patitas/iniciarSesion", {
+    fetch("https://patitasback.herokuapp.com/patitas/iniciarSesion", {
 
     method: "POST",
     body: JSON.stringify(req)
