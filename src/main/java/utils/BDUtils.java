@@ -408,4 +408,12 @@ public class BDUtils {
 
 
     }
+
+    public static OrganizacionBD dameOrganizacion(long id) {
+        EntityManager em = BDUtils.getEntityManager();
+
+        OrganizacionBD organizacionBD = em.find(OrganizacionBD.class, id);
+
+        return organizacionBD;
+    }
 }
