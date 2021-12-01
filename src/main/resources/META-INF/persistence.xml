@@ -22,7 +22,7 @@
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.connection.pool_size" value="20"/>
             <property name="hibernate.connection.autocommit" value="true"/>
-            <property name="hibernate.connection.release_mode" value="auto"/>
+            <property name="hibernate.connection.release_mode" value="after_transaction"/>
 <!--            <property name="hibernate.generate_statistics" value="true"/>-->
             
         </properties>
