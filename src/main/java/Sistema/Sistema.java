@@ -382,12 +382,6 @@ public class Sistema {
 
         BDUtils.agregarObjeto(adoptante);
 
-        PublicacionAdoptarBD publi = new PublicacionAdoptarBD();
-        publi.setPadop_adoptante(adoptante);
-        OrganizacionBD orga = BDUtils.dameOrganizacion(1L);
-        publi.setPubl_organizacion(orga);
-        publi.setPubl_estado("APROBADA");
-
         return new Gson().toJson(adoptante.transformar());
     }
 
