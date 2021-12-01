@@ -65,8 +65,7 @@ public class Sistema {
     /*   public void crearDuenio() {
            Duenio duenio = new Duenio();
        }*/
-    public void crearAdmin() {
-    }
+
 
     public static List<PublicacionDarEnAdopcion> publicacionesAptasParaAdoptar(Adoptante unAdoptante) {
         List<PublicacionDarEnAdopcion> publicacionesDarAdopcion = BDUtils.damePublicacionesAdopcion();
@@ -310,10 +309,24 @@ public class Sistema {
         Spark.post("/adoptante/crear/:id" , Sistema::crearAdoptante);
         Spark.post("/adoptante/comodidades" , Sistema::agregarComodidades);
         Spark.post("/adoptante/preferencias" , Sistema::agregarPreferencias);
+        Spark.post("/admin" , Sistema::crearAdmin);
 
 
 
         //Spark.post("/publicacionPerdida", Sistema::crearPubPerdida);
+    }
+
+    private static String crearAdmin(Request req, Response res) {
+
+        AdministradorBD admin = new Gson().fromJson(req.body(),AdministradorBD.class);
+
+        BDUtils.agregarObjeto(admin);
+
+        res.type("application/json");
+
+        res.status(200);
+
+        return new mensaje("Se creo el admin").transformar();
     }
 
     private static String agregarPreferencias(Request req, Response res) {
@@ -736,6 +749,7 @@ public class Sistema {
         }
 
         BDUtils.agregarObjeto(usuario);
+
 
         res.status(200);
 
