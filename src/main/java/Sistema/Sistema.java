@@ -366,7 +366,7 @@ public class Sistema {
 
         res.status(200);
 
-        PersonaBD persona = BDUtils.dameIdPersona(Long.parseLong(id));
+        PersonaBD persona = BDUtils.damePersona(Long.parseLong(id));
 
         AdoptanteBD adoptante = new AdoptanteBD();
 
