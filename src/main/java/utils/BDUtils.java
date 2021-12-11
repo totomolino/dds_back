@@ -308,16 +308,15 @@ public class BDUtils {
 
         EntityManager em = BDUtils.getEntityManager();
 
-        List<PersonaBD> persona = em.createQuery("from PersonaBD where pers_usuario = '" + id + "'").getResultList();
+        //List<PersonaBD> persona = em.createQuery("from PersonaBD where pers_usuario = '" + id + "'").getResultList();
+
+        PersonaBD persona = em.find(PersonaBD.class, id);
 
         BDUtils.commit(em);
 
         em.close();
 
-        if(persona.isEmpty()){
-            return null;
-        }
-        else return persona.get(0);
+        return persona;
 
     }
 
